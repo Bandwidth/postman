@@ -1961,6 +1961,35 @@
                             }
                         },
                         {
+                            "name": "GetMessages",
+                            "request": {
+                                "method": "get",
+                                "url": {
+                                    "raw": "https://messaging.bandwidth.com/api/v2/users/{userId}/messages",
+                                    "protocol": "https",
+                                    "host": [
+                                        "bandwidth",
+                                        "com"
+                                    ],
+                                    "path": [
+                                        "",
+                                        "api",
+                                        "v2",
+                                        "users",
+                                        "{{userId}}",
+                                        "messages"
+                                    ],
+                                    "variable": [
+                                        {
+                                            "id": "accountId",
+                                            "key": "accountId"
+                                        }
+                                    ]
+                                },
+                                "header": []
+                            }
+                        },
+                        {
                             "name": "CreateMessage",
                             "request": {
                                 "method": "post",
