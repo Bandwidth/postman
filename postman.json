@@ -1981,8 +1981,8 @@
                                     ],
                                     "variable": [
                                         {
-                                            "id": "accountId",
-                                            "key": "accountId"
+                                            "id": "userId",
+                                            "key": "userId"
                                         }
                                     ]
                                 },
