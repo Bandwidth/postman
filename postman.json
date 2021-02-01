@@ -2022,7 +2022,7 @@
                                             "language": "json"
                                         }
                                     },
-                                    "raw": "{\n    \"applicationId\": \"{{MessagingapplicationId}}\",\n    \"to\": \"[ string ]\",\n    \"from\": \"string\",\n    \"text\": \"string\",\n    \"media\": \"[ string ]\",\n    \"tag\": \"string\"\n}",
+                                    "raw": "{\n    \"applicationId\": \"{{MessagingapplicationId}}\",\n    \"to\": \"[ string ]\",\n    \"from\": \"string\",\n    \"text\": \"string\",\n    \"media\": \"[ string ]\",\n    \"tag\": \"string\",\n    \"priority\": \"string\"\n}",
                                     "mode": "raw"
                                 }
                             }
