@@ -2051,10 +2051,12 @@
                     "item": [
                         {
                             "name": "voiceTwoFactor",
+                            "description": "Allows a user to send a MFA code through a phone call",
                             "request": {
                                 "method": "post",
+                                "description": "Allows a user to send a MFA code through a phone call",
                                 "url": {
-                                    "raw": "https://mfa.bandwidth.com/api/v1//accounts/{accountId}/code/voice",
+                                    "raw": "https://mfa.bandwidth.com/api/v1/accounts/{accountId}/code/voice",
                                     "protocol": "https",
                                     "host": [
                                         "bandwidth",
@@ -2064,7 +2066,6 @@
                                         "",
                                         "api",
                                         "v1",
-                                        "",
                                         "accounts",
                                         "{{accountId}}",
                                         "code",
@@ -2091,10 +2092,12 @@
                         },
                         {
                             "name": "messagingTwoFactor",
+                            "description": "Allows a user to send a MFA code through a text message (SMS)",
                             "request": {
                                 "method": "post",
+                                "description": "Allows a user to send a MFA code through a text message (SMS)",
                                 "url": {
-                                    "raw": "https://mfa.bandwidth.com/api/v1//accounts/{accountId}/code/messaging",
+                                    "raw": "https://mfa.bandwidth.com/api/v1/accounts/{accountId}/code/messaging",
                                     "protocol": "https",
                                     "host": [
                                         "bandwidth",
@@ -2104,7 +2107,6 @@
                                         "",
                                         "api",
                                         "v1",
-                                        "",
                                         "accounts",
                                         "{{accountId}}",
                                         "code",
@@ -2131,10 +2133,12 @@
                         },
                         {
                             "name": "verifyTwoFactor",
+                            "description": "Allows a user to verify an MFA code",
                             "request": {
                                 "method": "post",
+                                "description": "Allows a user to verify an MFA code",
                                 "url": {
-                                    "raw": "https://mfa.bandwidth.com/api/v1//accounts/{accountId}/code/verify",
+                                    "raw": "https://mfa.bandwidth.com/api/v1/accounts/{accountId}/code/verify",
                                     "protocol": "https",
                                     "host": [
                                         "bandwidth",
@@ -2144,7 +2148,6 @@
                                         "",
                                         "api",
                                         "v1",
-                                        "",
                                         "accounts",
                                         "{{accountId}}",
                                         "code",
