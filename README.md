@@ -1,5 +1,7 @@
 # Bandwidth Postman Collection
 
+This repo contains an easily importable Postman Collection for those who want to use Postman to interact with Bandwidth's APIs.
+
 ## Getting Set Up
 
 ### Download Postman
