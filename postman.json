@@ -2085,7 +2085,7 @@
                                             "language": "json"
                                         }
                                     },
-                                    "raw": "{\n    \"to\": \"string\",\n    \"from\": \"string\",\n    \"applicationId\": \"{{TwoFactorAuthapplicationId}}\",\n    \"scope\": \"string\",\n    \"message\": \"string\",\n    \"digits\": \"number\"\n}",
+                                    "raw": "{\n    \"to\": \"string\",\n    \"from\": \"string\",\n    \"applicationId\": \"{{MultiFactorAuthapplicationId}}\",\n    \"scope\": \"string\",\n    \"message\": \"string\",\n    \"digits\": \"number\"\n}",
                                     "mode": "raw"
                                 }
                             }
@@ -2126,7 +2126,7 @@
                                             "language": "json"
                                         }
                                     },
-                                    "raw": "{\n    \"to\": \"string\",\n    \"from\": \"string\",\n    \"applicationId\": \"{{TwoFactorAuthapplicationId}}\",\n    \"scope\": \"string\",\n    \"message\": \"string\",\n    \"digits\": \"number\"\n}",
+                                    "raw": "{\n    \"to\": \"string\",\n    \"from\": \"string\",\n    \"applicationId\": \"{{MultiFactorAuthapplicationId}}\",\n    \"scope\": \"string\",\n    \"message\": \"string\",\n    \"digits\": \"number\"\n}",
                                     "mode": "raw"
                                 }
                             }
@@ -2167,13 +2167,13 @@
                                             "language": "json"
                                         }
                                     },
-                                    "raw": "{\n    \"to\": \"string\",\n    \"applicationId\": \"{{TwoFactorAuthapplicationId}}\",\n    \"scope\": \"string\",\n    \"expirationTimeInMinutes\": \"number\",\n    \"code\": \"string\"\n}",
+                                    "raw": "{\n    \"to\": \"string\",\n    \"applicationId\": \"{{MultiFactorAuthapplicationId}}\",\n    \"scope\": \"string\",\n    \"expirationTimeInMinutes\": \"number\",\n    \"code\": \"string\"\n}",
                                     "mode": "raw"
                                 }
                             }
                         }
                     ],
-                    "name": "TwoFactorAuth",
+                    "name": "MultiFactorAuth",
                     "auth": {
                         "type": "basic",
                         "basic": [
