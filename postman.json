@@ -1816,7 +1816,7 @@
                             "request": {
                                 "method": "get",
                                 "url": {
-                                    "raw": "https://messaging.bandwidth.com/api/v2/users/{userId}/media",
+                                    "raw": "https://messaging.bandwidth.com/api/v2/users/{accountId}/media",
                                     "protocol": "https",
                                     "host": [
                                         "bandwidth",
@@ -1827,13 +1827,13 @@
                                         "api",
                                         "v2",
                                         "users",
-                                        "{{userId}}",
+                                        "{{accountId}}",
                                         "media"
                                     ],
                                     "variable": [
                                         {
-                                            "id": "userId",
-                                            "key": "userId"
+                                            "id": "accountId",
+                                            "key": "accountId"
                                         }
                                     ]
                                 },
@@ -1850,7 +1850,7 @@
                             "request": {
                                 "method": "get",
                                 "url": {
-                                    "raw": "https://messaging.bandwidth.com/api/v2/users/{userId}/media/{mediaId}",
+                                    "raw": "https://messaging.bandwidth.com/api/v2/users/{accountId}/media/{mediaId}",
                                     "protocol": "https",
                                     "host": [
                                         "bandwidth",
@@ -1861,14 +1861,14 @@
                                         "api",
                                         "v2",
                                         "users",
-                                        "{{userId}}",
+                                        "{{accountId}}",
                                         "media",
                                         ":mediaId"
                                     ],
                                     "variable": [
                                         {
-                                            "id": "userId",
-                                            "key": "userId"
+                                            "id": "accountId",
+                                            "key": "accountId"
                                         },
                                         {
                                             "id": "mediaId",
@@ -1884,7 +1884,7 @@
                             "request": {
                                 "method": "put",
                                 "url": {
-                                    "raw": "https://messaging.bandwidth.com/api/v2/users/{userId}/media/{mediaId}",
+                                    "raw": "https://messaging.bandwidth.com/api/v2/users/{accountId}/media/{mediaId}",
                                     "protocol": "https",
                                     "host": [
                                         "bandwidth",
@@ -1895,14 +1895,14 @@
                                         "api",
                                         "v2",
                                         "users",
-                                        "{{userId}}",
+                                        "{{accountId}}",
                                         "media",
                                         ":mediaId"
                                     ],
                                     "variable": [
                                         {
-                                            "id": "userId",
-                                            "key": "userId"
+                                            "id": "accountId",
+                                            "key": "accountId"
                                         },
                                         {
                                             "id": "mediaId",
@@ -1931,7 +1931,7 @@
                             "request": {
                                 "method": "delete",
                                 "url": {
-                                    "raw": "https://messaging.bandwidth.com/api/v2/users/{userId}/media/{mediaId}",
+                                    "raw": "https://messaging.bandwidth.com/api/v2/users/{accountId}/media/{mediaId}",
                                     "protocol": "https",
                                     "host": [
                                         "bandwidth",
@@ -1942,14 +1942,14 @@
                                         "api",
                                         "v2",
                                         "users",
-                                        "{{userId}}",
+                                        "{{accountId}}",
                                         "media",
                                         ":mediaId"
                                     ],
                                     "variable": [
                                         {
-                                            "id": "userId",
-                                            "key": "userId"
+                                            "id": "accountId",
+                                            "key": "accountId"
                                         },
                                         {
                                             "id": "mediaId",
@@ -1965,7 +1965,7 @@
                             "request": {
                                 "method": "get",
                                 "url": {
-                                    "raw": "https://messaging.bandwidth.com/api/v2/users/{userId}/messages",
+                                    "raw": "https://messaging.bandwidth.com/api/v2/users/{accountId}/messages",
                                     "protocol": "https",
                                     "host": [
                                         "bandwidth",
@@ -1976,13 +1976,13 @@
                                         "api",
                                         "v2",
                                         "users",
-                                        "{{userId}}",
+                                        "{{accountId}}",
                                         "messages"
                                     ],
                                     "variable": [
                                         {
-                                            "id": "userId",
-                                            "key": "userId"
+                                            "id": "accountId",
+                                            "key": "accountId"
                                         }
                                     ]
                                 },
@@ -1994,7 +1994,7 @@
                             "request": {
                                 "method": "post",
                                 "url": {
-                                    "raw": "https://messaging.bandwidth.com/api/v2/users/{userId}/messages",
+                                    "raw": "https://messaging.bandwidth.com/api/v2/users/{accountId}/messages",
                                     "protocol": "https",
                                     "host": [
                                         "bandwidth",
@@ -2005,13 +2005,13 @@
                                         "api",
                                         "v2",
                                         "users",
-                                        "{{userId}}",
+                                        "{{accountId}}",
                                         "messages"
                                     ],
                                     "variable": [
                                         {
-                                            "id": "userId",
-                                            "key": "userId"
+                                            "id": "accountId",
+                                            "key": "accountId"
                                         }
                                     ]
                                 },
