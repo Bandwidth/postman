@@ -3159,7 +3159,7 @@
                                             "language": "json"
                                         }
                                     },
-                                    "raw": "{\n    \"id\": \"string\",\n    \"callbackUrl\": \"string\",\n    \"publishPermissions\": \"[ string ]\",\n    \"sessions\": \"[ string ]\",\n    \"subscriptions\": {\n        \"sessionId\": \"string\",\n        \"participants\": [\n            {\n                \"participantId\": \"string\"\n            }\n        ]\n    },\n    \"tag\": \"string\"\n}",
+                                    "raw": "{\n    \"id\": \"string\",\n    \"callbackUrl\": \"string\",\n    \"publishPermissions\": \"[ string ]\",\n    \"sessions\": \"[ string ]\",\n    \"subscriptions\": {\n        \"sessionId\": \"string\",\n        \"participants\": [\n            {\n                \"participantId\": \"string\"\n            }\n        ]\n    },\n    \"tag\": \"string\",\n    \"deviceApiVersion\": \"string\"\n}",
                                     "mode": "raw"
                                 }
                             }
