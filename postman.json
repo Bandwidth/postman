@@ -22914,10 +22914,6 @@
                                 },
                                 "header": [
                                     {
-                                        "key": "Content-Length",
-                                        "value": "<string>"
-                                    },
-                                    {
                                         "key": "Content-Type",
                                         "value": "<string>"
                                     },
