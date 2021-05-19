@@ -2191,17 +2191,108 @@
                 {
                     "item": [
                         {
+                            "name": "TnLookupRequest",
+                            "request": {
+                                "method": "post",
+                                "url": {
+                                    "raw": "https://uat.numbers.bandwidth.com/api/v1/tnlookup",
+                                    "protocol": "https",
+                                    "host": [
+                                        "numbers",
+                                        "bandwidth",
+                                        "com"
+                                    ],
+                                    "path": [
+                                        "",
+                                        "api",
+                                        "v1",
+                                        "tnlookup"
+                                    ],
+                                    "variable": []
+                                },
+                                "header": [
+                                    {
+                                        "key": "X-accountId",
+                                        "value": "<string>"
+                                    }
+                                ],
+                                "body": {
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    },
+                                    "raw": "{\n    \"tns\": \"[ string ]\"\n}",
+                                    "mode": "raw"
+                                }
+                            }
+                        },
+                        {
+                            "name": "GetTnLookupResult",
+                            "request": {
+                                "method": "get",
+                                "url": {
+                                    "raw": "https://uat.numbers.bandwidth.com/api/v1/tnlookup/{requestId}",
+                                    "protocol": "https",
+                                    "host": [
+                                        "numbers",
+                                        "bandwidth",
+                                        "com"
+                                    ],
+                                    "path": [
+                                        "",
+                                        "api",
+                                        "v1",
+                                        "tnlookup",
+                                        ":requestId"
+                                    ],
+                                    "variable": [
+                                        {
+                                            "id": "requestId",
+                                            "key": "requestId"
+                                        }
+                                    ]
+                                },
+                                "header": []
+                            }
+                        }
+                    ],
+                    "name": "PhoneNumberLookup",
+                    "auth": {
+                        "type": "basic",
+                        "basic": [
+                            {
+                                "id": "username",
+                                "key": "username",
+                                "type": "string",
+                                "value": "{{username}}"
+                            },
+                            {
+                                "id": "password",
+                                "key": "password",
+                                "type": "string",
+                                "value": "{{password}}"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "item": [
+                        {
                             "name": "createCall",
                             "description": "",
                             "request": {
                                 "method": "post",
                                 "description": "",
                                 "url": {
-                                    "raw": "voice.bandwidth.com/api/v2/accounts/{accountId}/calls",
-                                    "protocol": "",
-                                    "host": [],
+                                    "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/calls",
+                                    "protocol": "https",
+                                    "host": [
+                                        "bandwidth",
+                                        "com"
+                                    ],
                                     "path": [
-                                        "voice.bandwidth.com",
+                                        "",
                                         "api",
                                         "v2",
                                         "accounts",
@@ -2222,23 +2313,26 @@
                                             "language": "json"
                                         }
                                     },
-                                    "raw": "{\n    \"from\": \"string\",\n    \"to\": \"string\",\n    \"uui\": \"string\",\n    \"callTimeout\": \"number\",\n    \"callbackTimeout\": \"number\",\n    \"answerUrl\": \"string\",\n    \"answerFallbackUrl\": \"string\",\n    \"username\": \"string\",\n    \"password\": \"string\",\n    \"fallbackUsername\": \"string\",\n    \"fallbackPassword\": \"string\",\n    \"answerMethod\": \"string\",\n    \"answerFallbackMethod\": \"string\",\n    \"disconnectUrl\": \"string\",\n    \"disconnectMethod\": \"string\",\n    \"tag\": \"string\",\n    \"applicationId\": \"{{VoiceapplicationId}}\",\n    \"obfuscatedTo\": \"string\",\n    \"obfuscatedFrom\": \"string\"\n}",
+                                    "raw": "{\n    \"from\": \"string\",\n    \"to\": \"string\",\n    \"uui\": \"string\",\n    \"callTimeout\": \"number\",\n    \"callbackTimeout\": \"number\",\n    \"answerUrl\": \"string\",\n    \"answerFallbackUrl\": \"string\",\n    \"username\": \"string\",\n    \"password\": \"string\",\n    \"fallbackUsername\": \"string\",\n    \"fallbackPassword\": \"string\",\n    \"answerMethod\": \"string\",\n    \"answerFallbackMethod\": \"string\",\n    \"disconnectUrl\": \"string\",\n    \"disconnectMethod\": \"string\",\n    \"tag\": \"string\",\n    \"applicationId\": \"{{VoiceapplicationId}}\"\n}",
                                     "mode": "raw"
                                 }
                             }
                         },
                         {
-                            "name": "getCallState",
+                            "name": "getCall",
                             "description": "",
                             "request": {
                                 "method": "get",
                                 "description": "",
                                 "url": {
-                                    "raw": "voice.bandwidth.com/api/v2/accounts/{accountId}/calls/{callId}",
-                                    "protocol": "",
-                                    "host": [],
+                                    "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/calls/{callId}",
+                                    "protocol": "https",
+                                    "host": [
+                                        "bandwidth",
+                                        "com"
+                                    ],
                                     "path": [
-                                        "voice.bandwidth.com",
+                                        "",
                                         "api",
                                         "v2",
                                         "accounts",
@@ -2257,14 +2351,7 @@
                                         }
                                     ]
                                 },
-                                "header": [],
-                                "body": {
-                                    "options": {
-                                        "raw": {
-                                            "language": ""
-                                        }
-                                    }
-                                }
+                                "header": []
                             }
                         },
                         {
@@ -2274,11 +2361,14 @@
                                 "method": "post",
                                 "description": "",
                                 "url": {
-                                    "raw": "voice.bandwidth.com/api/v2/accounts/{accountId}/calls/{callId}",
-                                    "protocol": "",
-                                    "host": [],
+                                    "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/calls/{callId}",
+                                    "protocol": "https",
+                                    "host": [
+                                        "bandwidth",
+                                        "com"
+                                    ],
                                     "path": [
-                                        "voice.bandwidth.com",
+                                        "",
                                         "api",
                                         "v2",
                                         "accounts",
@@ -2316,11 +2406,14 @@
                                 "method": "put",
                                 "description": "",
                                 "url": {
-                                    "raw": "voice.bandwidth.com/api/v2/accounts/{accountId}/calls/{callId}/recording",
-                                    "protocol": "",
-                                    "host": [],
+                                    "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/calls/{callId}/recording",
+                                    "protocol": "https",
+                                    "host": [
+                                        "bandwidth",
+                                        "com"
+                                    ],
                                     "path": [
-                                        "voice.bandwidth.com",
+                                        "",
                                         "api",
                                         "v2",
                                         "accounts",
@@ -2353,17 +2446,20 @@
                             }
                         },
                         {
-                            "name": "queryMetadataForAccountAndCall",
+                            "name": "getCallRecordings",
                             "description": "Returns a (potentially empty) list of metadata for the recordings that took place during the specified call",
                             "request": {
                                 "method": "get",
                                 "description": "Returns a (potentially empty) list of metadata for the recordings that took place during the specified call",
                                 "url": {
-                                    "raw": "voice.bandwidth.com/api/v2/accounts/{accountId}/calls/{callId}/recordings",
-                                    "protocol": "",
-                                    "host": [],
+                                    "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/calls/{callId}/recordings",
+                                    "protocol": "https",
+                                    "host": [
+                                        "bandwidth",
+                                        "com"
+                                    ],
                                     "path": [
-                                        "voice.bandwidth.com",
+                                        "",
                                         "api",
                                         "v2",
                                         "accounts",
@@ -2383,28 +2479,24 @@
                                         }
                                     ]
                                 },
-                                "header": [],
-                                "body": {
-                                    "options": {
-                                        "raw": {
-                                            "language": ""
-                                        }
-                                    }
-                                }
+                                "header": []
                             }
                         },
                         {
-                            "name": "getMetadataForRecording",
+                            "name": "getCallRecording",
                             "description": "",
                             "request": {
                                 "method": "get",
                                 "description": "",
                                 "url": {
-                                    "raw": "voice.bandwidth.com/api/v2/accounts/{accountId}/calls/{callId}/recordings/{recordingId}",
-                                    "protocol": "",
-                                    "host": [],
+                                    "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/calls/{callId}/recordings/{recordingId}",
+                                    "protocol": "https",
+                                    "host": [
+                                        "bandwidth",
+                                        "com"
+                                    ],
                                     "path": [
-                                        "voice.bandwidth.com",
+                                        "",
                                         "api",
                                         "v2",
                                         "accounts",
@@ -2429,14 +2521,7 @@
                                         }
                                     ]
                                 },
-                                "header": [],
-                                "body": {
-                                    "options": {
-                                        "raw": {
-                                            "language": ""
-                                        }
-                                    }
-                                }
+                                "header": []
                             }
                         },
                         {
@@ -2446,11 +2531,14 @@
                                 "method": "delete",
                                 "description": "",
                                 "url": {
-                                    "raw": "voice.bandwidth.com/api/v2/accounts/{accountId}/calls/{callId}/recordings/{recordingId}",
-                                    "protocol": "",
-                                    "host": [],
+                                    "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/calls/{callId}/recordings/{recordingId}",
+                                    "protocol": "https",
+                                    "host": [
+                                        "bandwidth",
+                                        "com"
+                                    ],
                                     "path": [
-                                        "voice.bandwidth.com",
+                                        "",
                                         "api",
                                         "v2",
                                         "accounts",
@@ -2475,28 +2563,24 @@
                                         }
                                     ]
                                 },
-                                "header": [],
-                                "body": {
-                                    "options": {
-                                        "raw": {
-                                            "language": ""
-                                        }
-                                    }
-                                }
+                                "header": []
                             }
                         },
                         {
-                            "name": "streamRecordingMedia",
+                            "name": "downloadCallRecording",
                             "description": "",
                             "request": {
                                 "method": "get",
                                 "description": "",
                                 "url": {
-                                    "raw": "voice.bandwidth.com/api/v2/accounts/{accountId}/calls/{callId}/recordings/{recordingId}/media",
-                                    "protocol": "",
-                                    "host": [],
+                                    "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/calls/{callId}/recordings/{recordingId}/media",
+                                    "protocol": "https",
+                                    "host": [
+                                        "bandwidth",
+                                        "com"
+                                    ],
                                     "path": [
-                                        "voice.bandwidth.com",
+                                        "",
                                         "api",
                                         "v2",
                                         "accounts",
@@ -2522,14 +2606,7 @@
                                         }
                                     ]
                                 },
-                                "header": [],
-                                "body": {
-                                    "options": {
-                                        "raw": {
-                                            "language": ""
-                                        }
-                                    }
-                                }
+                                "header": []
                             }
                         },
                         {
@@ -2539,11 +2616,14 @@
                                 "method": "delete",
                                 "description": "",
                                 "url": {
-                                    "raw": "voice.bandwidth.com/api/v2/accounts/{accountId}/calls/{callId}/recordings/{recordingId}/media",
-                                    "protocol": "",
-                                    "host": [],
+                                    "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/calls/{callId}/recordings/{recordingId}/media",
+                                    "protocol": "https",
+                                    "host": [
+                                        "bandwidth",
+                                        "com"
+                                    ],
                                     "path": [
-                                        "voice.bandwidth.com",
+                                        "",
                                         "api",
                                         "v2",
                                         "accounts",
@@ -2569,28 +2649,24 @@
                                         }
                                     ]
                                 },
-                                "header": [],
-                                "body": {
-                                    "options": {
-                                        "raw": {
-                                            "language": ""
-                                        }
-                                    }
-                                }
+                                "header": []
                             }
                         },
                         {
-                            "name": "getRecordingTranscription",
+                            "name": "getCallTranscription",
                             "description": "",
                             "request": {
                                 "method": "get",
                                 "description": "",
                                 "url": {
-                                    "raw": "voice.bandwidth.com/api/v2/accounts/{accountId}/calls/{callId}/recordings/{recordingId}/transcription",
-                                    "protocol": "",
-                                    "host": [],
+                                    "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/calls/{callId}/recordings/{recordingId}/transcription",
+                                    "protocol": "https",
+                                    "host": [
+                                        "bandwidth",
+                                        "com"
+                                    ],
                                     "path": [
-                                        "voice.bandwidth.com",
+                                        "",
                                         "api",
                                         "v2",
                                         "accounts",
@@ -2616,28 +2692,24 @@
                                         }
                                     ]
                                 },
-                                "header": [],
-                                "body": {
-                                    "options": {
-                                        "raw": {
-                                            "language": ""
-                                        }
-                                    }
-                                }
+                                "header": []
                             }
                         },
                         {
-                            "name": "transcribeRecording",
+                            "name": "transcribeCallRecording",
                             "description": "",
                             "request": {
                                 "method": "post",
                                 "description": "",
                                 "url": {
-                                    "raw": "voice.bandwidth.com/api/v2/accounts/{accountId}/calls/{callId}/recordings/{recordingId}/transcription",
-                                    "protocol": "",
-                                    "host": [],
+                                    "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/calls/{callId}/recordings/{recordingId}/transcription",
+                                    "protocol": "https",
+                                    "host": [
+                                        "bandwidth",
+                                        "com"
+                                    ],
                                     "path": [
-                                        "voice.bandwidth.com",
+                                        "",
                                         "api",
                                         "v2",
                                         "accounts",
@@ -2676,17 +2748,20 @@
                             }
                         },
                         {
-                            "name": "deleteRecordingTranscription",
+                            "name": "deleteCallTranscription",
                             "description": "",
                             "request": {
                                 "method": "delete",
                                 "description": "",
                                 "url": {
-                                    "raw": "voice.bandwidth.com/api/v2/accounts/{accountId}/calls/{callId}/recordings/{recordingId}/transcription",
-                                    "protocol": "",
-                                    "host": [],
+                                    "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/calls/{callId}/recordings/{recordingId}/transcription",
+                                    "protocol": "https",
+                                    "host": [
+                                        "bandwidth",
+                                        "com"
+                                    ],
                                     "path": [
-                                        "voice.bandwidth.com",
+                                        "",
                                         "api",
                                         "v2",
                                         "accounts",
@@ -2712,28 +2787,24 @@
                                         }
                                     ]
                                 },
-                                "header": [],
-                                "body": {
-                                    "options": {
-                                        "raw": {
-                                            "language": ""
-                                        }
-                                    }
-                                }
+                                "header": []
                             }
                         },
                         {
-                            "name": "getConferencesByAccount",
+                            "name": "getConferences",
                             "description": "",
                             "request": {
                                 "method": "get",
                                 "description": "",
                                 "url": {
-                                    "raw": "voice.bandwidth.com/api/v2/accounts/{accountId}/conferences",
-                                    "protocol": "",
-                                    "host": [],
+                                    "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/conferences",
+                                    "protocol": "https",
+                                    "host": [
+                                        "bandwidth",
+                                        "com"
+                                    ],
                                     "path": [
-                                        "voice.bandwidth.com",
+                                        "",
                                         "api",
                                         "v2",
                                         "accounts",
@@ -2747,28 +2818,24 @@
                                         }
                                     ]
                                 },
-                                "header": [],
-                                "body": {
-                                    "options": {
-                                        "raw": {
-                                            "language": ""
-                                        }
-                                    }
-                                }
+                                "header": []
                             }
                         },
                         {
-                            "name": "getConferenceById",
+                            "name": "getConference",
                             "description": "",
                             "request": {
                                 "method": "get",
                                 "description": "",
                                 "url": {
-                                    "raw": "voice.bandwidth.com/api/v2/accounts/{accountId}/conferences/{conferenceId}",
-                                    "protocol": "",
-                                    "host": [],
+                                    "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/conferences/{conferenceId}",
+                                    "protocol": "https",
+                                    "host": [
+                                        "bandwidth",
+                                        "com"
+                                    ],
                                     "path": [
-                                        "voice.bandwidth.com",
+                                        "",
                                         "api",
                                         "v2",
                                         "accounts",
@@ -2787,14 +2854,7 @@
                                         }
                                     ]
                                 },
-                                "header": [],
-                                "body": {
-                                    "options": {
-                                        "raw": {
-                                            "language": ""
-                                        }
-                                    }
-                                }
+                                "header": []
                             }
                         },
                         {
@@ -2804,11 +2864,14 @@
                                 "method": "post",
                                 "description": "",
                                 "url": {
-                                    "raw": "voice.bandwidth.com/api/v2/accounts/{accountId}/conferences/{conferenceId}",
-                                    "protocol": "",
-                                    "host": [],
+                                    "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/conferences/{conferenceId}",
+                                    "protocol": "https",
+                                    "host": [
+                                        "bandwidth",
+                                        "com"
+                                    ],
                                     "path": [
-                                        "voice.bandwidth.com",
+                                        "",
                                         "api",
                                         "v2",
                                         "accounts",
@@ -2846,11 +2909,14 @@
                                 "method": "put",
                                 "description": "",
                                 "url": {
-                                    "raw": "voice.bandwidth.com/api/v2/accounts/{accountId}/conferences/{conferenceId}/members/{callId}",
-                                    "protocol": "",
-                                    "host": [],
+                                    "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/conferences/{conferenceId}/members/{callId}",
+                                    "protocol": "https",
+                                    "host": [
+                                        "bandwidth",
+                                        "com"
+                                    ],
                                     "path": [
-                                        "voice.bandwidth.com",
+                                        "",
                                         "api",
                                         "v2",
                                         "accounts",
@@ -2894,11 +2960,14 @@
                                 "method": "get",
                                 "description": "",
                                 "url": {
-                                    "raw": "voice.bandwidth.com/api/v2/accounts/{accountId}/conferences/{conferenceId}/members/{memberId}",
-                                    "protocol": "",
-                                    "host": [],
+                                    "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/conferences/{conferenceId}/members/{memberId}",
+                                    "protocol": "https",
+                                    "host": [
+                                        "bandwidth",
+                                        "com"
+                                    ],
                                     "path": [
-                                        "voice.bandwidth.com",
+                                        "",
                                         "api",
                                         "v2",
                                         "accounts",
@@ -2923,28 +2992,24 @@
                                         }
                                     ]
                                 },
-                                "header": [],
-                                "body": {
-                                    "options": {
-                                        "raw": {
-                                            "language": ""
-                                        }
-                                    }
-                                }
+                                "header": []
                             }
                         },
                         {
-                            "name": "queryMetadataForAccountAndConference",
+                            "name": "getConferenceRecordings",
                             "description": "Returns a (potentially empty) list of metadata for the recordings that took place during the specified conference",
                             "request": {
                                 "method": "get",
                                 "description": "Returns a (potentially empty) list of metadata for the recordings that took place during the specified conference",
                                 "url": {
-                                    "raw": "voice.bandwidth.com/api/v2/accounts/{accountId}/conferences/{conferenceId}/recordings",
-                                    "protocol": "",
-                                    "host": [],
+                                    "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/conferences/{conferenceId}/recordings",
+                                    "protocol": "https",
+                                    "host": [
+                                        "bandwidth",
+                                        "com"
+                                    ],
                                     "path": [
-                                        "voice.bandwidth.com",
+                                        "",
                                         "api",
                                         "v2",
                                         "accounts",
@@ -2964,28 +3029,24 @@
                                         }
                                     ]
                                 },
-                                "header": [],
-                                "body": {
-                                    "options": {
-                                        "raw": {
-                                            "language": ""
-                                        }
-                                    }
-                                }
+                                "header": []
                             }
                         },
                         {
-                            "name": "getMetadataForConferenceRecording",
+                            "name": "getConferenceRecording",
                             "description": "",
                             "request": {
                                 "method": "get",
                                 "description": "",
                                 "url": {
-                                    "raw": "voice.bandwidth.com/api/v2/accounts/{accountId}/conferences/{conferenceId}/recordings/{recordingId}",
-                                    "protocol": "",
-                                    "host": [],
+                                    "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/conferences/{conferenceId}/recordings/{recordingId}",
+                                    "protocol": "https",
+                                    "host": [
+                                        "bandwidth",
+                                        "com"
+                                    ],
                                     "path": [
-                                        "voice.bandwidth.com",
+                                        "",
                                         "api",
                                         "v2",
                                         "accounts",
@@ -3010,28 +3071,24 @@
                                         }
                                     ]
                                 },
-                                "header": [],
-                                "body": {
-                                    "options": {
-                                        "raw": {
-                                            "language": ""
-                                        }
-                                    }
-                                }
+                                "header": []
                             }
                         },
                         {
-                            "name": "streamConferenceRecordingMedia",
+                            "name": "downloadConferenceRecording",
                             "description": "",
                             "request": {
                                 "method": "get",
                                 "description": "",
                                 "url": {
-                                    "raw": "voice.bandwidth.com/api/v2/accounts/{accountId}/conferences/{conferenceId}/recordings/{recordingId}/media",
-                                    "protocol": "",
-                                    "host": [],
+                                    "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/conferences/{conferenceId}/recordings/{recordingId}/media",
+                                    "protocol": "https",
+                                    "host": [
+                                        "bandwidth",
+                                        "com"
+                                    ],
                                     "path": [
-                                        "voice.bandwidth.com",
+                                        "",
                                         "api",
                                         "v2",
                                         "accounts",
@@ -3057,28 +3114,24 @@
                                         }
                                     ]
                                 },
-                                "header": [],
-                                "body": {
-                                    "options": {
-                                        "raw": {
-                                            "language": ""
-                                        }
-                                    }
-                                }
+                                "header": []
                             }
                         },
                         {
-                            "name": "queryMetadataForAccount",
+                            "name": "queryCallRecordings",
                             "description": "Returns a list of metadata for the recordings associated with the specified account. The list can be filtered by the optional from, to, minStartTime, and maxStartTime arguments. The list is capped at 1000 entries and may be empty if no recordings match the specified criteria.",
                             "request": {
                                 "method": "get",
                                 "description": "Returns a list of metadata for the recordings associated with the specified account. The list can be filtered by the optional from, to, minStartTime, and maxStartTime arguments. The list is capped at 1000 entries and may be empty if no recordings match the specified criteria.",
                                 "url": {
-                                    "raw": "voice.bandwidth.com/api/v2/accounts/{accountId}/recordings",
-                                    "protocol": "",
-                                    "host": [],
+                                    "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/recordings",
+                                    "protocol": "https",
+                                    "host": [
+                                        "bandwidth",
+                                        "com"
+                                    ],
                                     "path": [
-                                        "voice.bandwidth.com",
+                                        "",
                                         "api",
                                         "v2",
                                         "accounts",
@@ -3092,14 +3145,7 @@
                                         }
                                     ]
                                 },
-                                "header": [],
-                                "body": {
-                                    "options": {
-                                        "raw": {
-                                            "language": ""
-                                        }
-                                    }
-                                }
+                                "header": []
                             }
                         }
                     ],
