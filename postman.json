@@ -2191,14 +2191,15 @@
                 {
                     "item": [
                         {
-                            "name": "TnLookupRequest",
+                            "name": "LookupRequest",
+                            "description": "Create a TN Lookup Order",
                             "request": {
                                 "method": "post",
+                                "description": "Create a TN Lookup Order",
                                 "url": {
-                                    "raw": "https://uat.numbers.bandwidth.com/api/v1/tnlookup",
+                                    "raw": "https://numbers.bandwidth.com/api/v1/accounts/{accountId}/tnlookup",
                                     "protocol": "https",
                                     "host": [
-                                        "numbers",
                                         "bandwidth",
                                         "com"
                                     ],
@@ -2206,16 +2207,18 @@
                                         "",
                                         "api",
                                         "v1",
+                                        "accounts",
+                                        "{{accountId}}",
                                         "tnlookup"
                                     ],
-                                    "variable": []
+                                    "variable": [
+                                        {
+                                            "id": "accountId",
+                                            "key": "accountId"
+                                        }
+                                    ]
                                 },
-                                "header": [
-                                    {
-                                        "key": "X-accountId",
-                                        "value": "<string>"
-                                    }
-                                ],
+                                "header": [],
                                 "body": {
                                     "options": {
                                         "raw": {
@@ -2228,14 +2231,15 @@
                             }
                         },
                         {
-                            "name": "GetTnLookupResult",
+                            "name": "LookupRequestStatus",
+                            "description": "Query an existing TN Lookup Order",
                             "request": {
                                 "method": "get",
+                                "description": "Query an existing TN Lookup Order",
                                 "url": {
-                                    "raw": "https://uat.numbers.bandwidth.com/api/v1/tnlookup/{requestId}",
+                                    "raw": "https://numbers.bandwidth.com/api/v1/accounts/{accountId}/tnlookup/{requestId}",
                                     "protocol": "https",
                                     "host": [
-                                        "numbers",
                                         "bandwidth",
                                         "com"
                                     ],
@@ -2243,10 +2247,16 @@
                                         "",
                                         "api",
                                         "v1",
+                                        "accounts",
+                                        "{{accountId}}",
                                         "tnlookup",
                                         ":requestId"
                                     ],
                                     "variable": [
+                                        {
+                                            "id": "accountId",
+                                            "key": "accountId"
+                                        },
                                         {
                                             "id": "requestId",
                                             "key": "requestId"
