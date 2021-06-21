@@ -2191,6 +2191,94 @@
                 {
                     "item": [
                         {
+                            "name": "TnLookupRequest",
+                            "request": {
+                                "method": "post",
+                                "url": {
+                                    "raw": "https://uat.numbers.bandwidth.com/api/v1/tnlookup",
+                                    "protocol": "https",
+                                    "host": [
+                                        "numbers",
+                                        "bandwidth",
+                                        "com"
+                                    ],
+                                    "path": [
+                                        "",
+                                        "api",
+                                        "v1",
+                                        "tnlookup"
+                                    ],
+                                    "variable": []
+                                },
+                                "header": [
+                                    {
+                                        "key": "X-accountId",
+                                        "value": "<string>"
+                                    }
+                                ],
+                                "body": {
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    },
+                                    "raw": "{\n    \"tns\": \"[ string ]\"\n}",
+                                    "mode": "raw"
+                                }
+                            }
+                        },
+                        {
+                            "name": "GetTnLookupResult",
+                            "request": {
+                                "method": "get",
+                                "url": {
+                                    "raw": "https://uat.numbers.bandwidth.com/api/v1/tnlookup/{requestId}",
+                                    "protocol": "https",
+                                    "host": [
+                                        "numbers",
+                                        "bandwidth",
+                                        "com"
+                                    ],
+                                    "path": [
+                                        "",
+                                        "api",
+                                        "v1",
+                                        "tnlookup",
+                                        ":requestId"
+                                    ],
+                                    "variable": [
+                                        {
+                                            "id": "requestId",
+                                            "key": "requestId"
+                                        }
+                                    ]
+                                },
+                                "header": []
+                            }
+                        }
+                    ],
+                    "name": "PhoneNumberLookup",
+                    "auth": {
+                        "type": "basic",
+                        "basic": [
+                            {
+                                "id": "username",
+                                "key": "username",
+                                "type": "string",
+                                "value": "{{username}}"
+                            },
+                            {
+                                "id": "password",
+                                "key": "password",
+                                "type": "string",
+                                "value": "{{password}}"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "item": [
+                        {
                             "name": "createCall",
                             "description": "",
                             "request": {
