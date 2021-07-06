@@ -3522,12 +3522,12 @@
                                             "key": "accountId"
                                         },
                                         {
-                                            "id": "participantId",
-                                            "key": "participantId"
-                                        },
-                                        {
                                             "id": "sessionId",
                                             "key": "sessionId"
+                                        },
+                                        {
+                                            "id": "participantId",
+                                            "key": "participantId"
                                         }
                                     ]
                                 },
@@ -3565,12 +3565,12 @@
                                             "key": "accountId"
                                         },
                                         {
-                                            "id": "participantId",
-                                            "key": "participantId"
-                                        },
-                                        {
                                             "id": "sessionId",
                                             "key": "sessionId"
+                                        },
+                                        {
+                                            "id": "participantId",
+                                            "key": "participantId"
                                         }
                                     ]
                                 },
@@ -3608,12 +3608,12 @@
                                             "key": "accountId"
                                         },
                                         {
-                                            "id": "participantId",
-                                            "key": "participantId"
-                                        },
-                                        {
                                             "id": "sessionId",
                                             "key": "sessionId"
+                                        },
+                                        {
+                                            "id": "participantId",
+                                            "key": "participantId"
                                         }
                                     ]
                                 },
