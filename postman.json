@@ -3227,7 +3227,7 @@
                                             "language": "json"
                                         }
                                     },
-                                    "raw": "{\n    \"id\": \"string\",\n    \"callbackUrl\": \"string\",\n    \"publishPermissions\": \"[ string ]\",\n    \"sessions\": \"[ string ]\",\n    \"subscriptions\": {\n        \"sessionId\": \"string\",\n        \"participants\": [\n            {\n                \"participantId\": \"string\"\n            }\n        ]\n    },\n    \"tag\": \"string\",\n    \"deviceApiVersion\": \"string\"\n}",
+                                    "raw": "{\n    \"callbackUrl\": \"string\",\n    \"publishPermissions\": \"[ string ]\",\n    \"tag\": \"string\",\n    \"deviceApiVersion\": \"string\"\n}",
                                     "mode": "raw"
                                 }
                             }
@@ -3499,7 +3499,7 @@
                                             "language": "json"
                                         }
                                     },
-                                    "raw": "{\n    \"sessionId\": \"string\",\n    \"participants\": [\n        {\n            \"participantId\": \"string\"\n        }\n    ]\n}",
+                                    "raw": "{\n    \"sessionId\": \"string\",\n    \"participants\": [\n        {\n            \"participantId\": \"string\",\n            \"streamAliases\": \"[ string ]\"\n        }\n    ]\n}",
                                     "mode": "raw"
                                 }
                             }
@@ -3636,7 +3636,7 @@
                                             "language": "json"
                                         }
                                     },
-                                    "raw": "{\n    \"sessionId\": \"string\",\n    \"participants\": [\n        {\n            \"participantId\": \"string\"\n        }\n    ]\n}",
+                                    "raw": "{\n    \"sessionId\": \"string\",\n    \"participants\": [\n        {\n            \"participantId\": \"string\",\n            \"streamAliases\": \"[ string ]\"\n        }\n    ]\n}",
                                     "mode": "raw"
                                 }
                             }
