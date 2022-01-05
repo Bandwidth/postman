@@ -2302,10 +2302,10 @@
                     "item": [
                         {
                             "name": "createCall",
-                            "description": "Creates an outbound phone call.",
+                            "description": "Creates an outbound phone call.\n\nCalls are created immediately unless your account has outbound call queueing enabled. When enabled, your outbound calls will be queued and initiated at a specific dequeueing rate, enabling your application to \"fire and forget\" when creating calls. Queued calls may not be modified until they are dequeued and placed, but may be removed from your queue on demand.\n\nTo enable call queueing on your account, contact our Account Management team.\n\n<b>Please note: </b> Calls submitted to your queue will be placed aproximately in order, but exact ordering is not guaranteed.",
                             "request": {
                                 "method": "post",
-                                "description": "Creates an outbound phone call.",
+                                "description": "Creates an outbound phone call.\n\nCalls are created immediately unless your account has outbound call queueing enabled. When enabled, your outbound calls will be queued and initiated at a specific dequeueing rate, enabling your application to \"fire and forget\" when creating calls. Queued calls may not be modified until they are dequeued and placed, but may be removed from your queue on demand.\n\nTo enable call queueing on your account, contact our Account Management team.\n\n<b>Please note: </b> Calls submitted to your queue will be placed aproximately in order, but exact ordering is not guaranteed.",
                                 "url": {
                                     "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/calls",
                                     "protocol": "https",
@@ -2335,17 +2335,17 @@
                                             "language": "json"
                                         }
                                     },
-                                    "raw": "{\n    \"from\": \"string\",\n    \"to\": \"string\",\n    \"uui\": \"string\",\n    \"callTimeout\": \"number\",\n    \"callbackTimeout\": \"number\",\n    \"answerUrl\": \"string\",\n    \"answerFallbackUrl\": \"string\",\n    \"username\": \"string\",\n    \"password\": \"string\",\n    \"fallbackUsername\": \"string\",\n    \"fallbackPassword\": \"string\",\n    \"answerMethod\": \"string\",\n    \"answerFallbackMethod\": \"string\",\n    \"disconnectUrl\": \"string\",\n    \"disconnectMethod\": \"string\",\n    \"tag\": \"string\",\n    \"applicationId\": \"{{VoiceapplicationId}}\",\n    \"machineDetection\": {\n        \"mode\": \"string\",\n        \"detectionTimeout\": \"number\",\n        \"silenceTimeout\": \"number\",\n        \"speechThreshold\": \"number\",\n        \"speechEndThreshold\": \"number\",\n        \"delayResult\": \"boolean\",\n        \"callbackUrl\": \"string\",\n        \"callbackMethod\": \"string\",\n        \"fallbackUrl\": \"string\",\n        \"fallbackMethod\": \"string\",\n        \"username\": \"string\",\n        \"password\": \"string\",\n        \"fallbackUsername\": \"string\",\n        \"fallbackPassword\": \"string\"\n    }\n}",
+                                    "raw": "{\n    \"from\": \"string\",\n    \"to\": \"string\",\n    \"uui\": \"string\",\n    \"callTimeout\": \"number\",\n    \"callbackTimeout\": \"number\",\n    \"answerUrl\": \"string\",\n    \"answerFallbackUrl\": \"string\",\n    \"username\": \"string\",\n    \"password\": \"string\",\n    \"fallbackUsername\": \"string\",\n    \"fallbackPassword\": \"string\",\n    \"answerMethod\": \"string\",\n    \"answerFallbackMethod\": \"string\",\n    \"disconnectUrl\": \"string\",\n    \"disconnectMethod\": \"string\",\n    \"tag\": \"string\",\n    \"applicationId\": \"{{VoiceapplicationId}}\",\n    \"machineDetection\": {\n        \"mode\": \"string\",\n        \"detectionTimeout\": \"number\",\n        \"silenceTimeout\": \"number\",\n        \"speechThreshold\": \"number\",\n        \"speechEndThreshold\": \"number\",\n        \"delayResult\": \"boolean\",\n        \"callbackUrl\": \"string\",\n        \"callbackMethod\": \"string\",\n        \"fallbackUrl\": \"string\",\n        \"fallbackMethod\": \"string\",\n        \"username\": \"string\",\n        \"password\": \"string\",\n        \"fallbackUsername\": \"string\",\n        \"fallbackPassword\": \"string\"\n    },\n    \"priority\": \"integer\"\n}",
                                     "mode": "raw"
                                 }
                             }
                         },
                         {
                             "name": "getCall",
-                            "description": "Returns near-realtime metadata about the specified call.",
+                            "description": "Retrieve the current state of a specific call. This information is near-realtime, so it may take a few minutes for your call to be accessible using this endpoint.<br><br>**Note**: Call information is kept for 7 days after the calls are hung up. If you attempt to retrieve information for a call that is older than 7 days, you will get an HTTP 404 response.\n\nThe `disconnectCause` for a call can be:\n- `hangup`: one party hung up the call, a [`<Hangup>`](../../bxml/verbs/hangup.md) verb was executed, or there was no more BXML to execute; it indicates that the call ended normally.\n- `busy`: the callee was busy.\n- `timeout`: the call wasn't answered before the `callTimeout` was reached.\n- `cancel`: the call was cancelled by its originator while it was ringing.\n- `rejected`: the call was rejected by the callee.\n- `callback-error`: a BXML callback couldn't be delivered to your callback server.\n- `invalid-bxml`: invalid BXML was returned in response to a callback.\n- `application-error`: an unsupported action was tried on the call, e.g. trying to play a .ogg audio.\n- `account-limit`: the account rate limits were reached.\n- `node-capacity-exceeded`: the system maximum capacity was reached.\n- `error`: some error not described in any of the other causes happened on the call.\n- `unknown`: some unknown error happened on the call.\n\nNote: this list is not exhaustive and other values can appear in the future.",
                             "request": {
                                 "method": "get",
-                                "description": "Returns near-realtime metadata about the specified call.",
+                                "description": "Retrieve the current state of a specific call. This information is near-realtime, so it may take a few minutes for your call to be accessible using this endpoint.<br><br>**Note**: Call information is kept for 7 days after the calls are hung up. If you attempt to retrieve information for a call that is older than 7 days, you will get an HTTP 404 response.\n\nThe `disconnectCause` for a call can be:\n- `hangup`: one party hung up the call, a [`<Hangup>`](../../bxml/verbs/hangup.md) verb was executed, or there was no more BXML to execute; it indicates that the call ended normally.\n- `busy`: the callee was busy.\n- `timeout`: the call wasn't answered before the `callTimeout` was reached.\n- `cancel`: the call was cancelled by its originator while it was ringing.\n- `rejected`: the call was rejected by the callee.\n- `callback-error`: a BXML callback couldn't be delivered to your callback server.\n- `invalid-bxml`: invalid BXML was returned in response to a callback.\n- `application-error`: an unsupported action was tried on the call, e.g. trying to play a .ogg audio.\n- `account-limit`: the account rate limits were reached.\n- `node-capacity-exceeded`: the system maximum capacity was reached.\n- `error`: some error not described in any of the other causes happened on the call.\n- `unknown`: some unknown error happened on the call.\n\nNote: this list is not exhaustive and other values can appear in the future.",
                                 "url": {
                                     "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/calls/{callId}",
                                     "protocol": "https",
@@ -2378,10 +2378,10 @@
                         },
                         {
                             "name": "modifyCall",
-                            "description": "Interrupts and replaces an active call's BXML document.",
+                            "description": "Interrupts and replaces an active call's BXML document or hangs up the call",
                             "request": {
                                 "method": "post",
-                                "description": "Interrupts and replaces an active call's BXML document.",
+                                "description": "Interrupts and replaces an active call's BXML document or hangs up the call",
                                 "url": {
                                     "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/calls/{callId}",
                                     "protocol": "https",
@@ -2423,10 +2423,10 @@
                         },
                         {
                             "name": "modifyCallRecordingState",
-                            "description": "Pauses or resumes a recording.",
+                            "description": "Pause or resume a recording on an active phone call",
                             "request": {
                                 "method": "put",
-                                "description": "Pauses or resumes a recording.",
+                                "description": "Pause or resume a recording on an active phone call",
                                 "url": {
                                     "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/calls/{callId}/recording",
                                     "protocol": "https",
@@ -2548,10 +2548,10 @@
                         },
                         {
                             "name": "deleteRecording",
-                            "description": "Deletes the specified recording.",
+                            "description": "Delete the recording information, media and transcription.\n\nNote: After the deletion is requested and a `204` is returned, neither the recording metadata nor the actual media nor its transcription will be accessible anymore. However, the media of the specified recording is not deleted immediately. This deletion process, while transparent and irreversible, can take an additional 24 to 48 hours.",
                             "request": {
                                 "method": "delete",
-                                "description": "Deletes the specified recording.",
+                                "description": "Delete the recording information, media and transcription.\n\nNote: After the deletion is requested and a `204` is returned, neither the recording metadata nor the actual media nor its transcription will be accessible anymore. However, the media of the specified recording is not deleted immediately. This deletion process, while transparent and irreversible, can take an additional 24 to 48 hours.",
                                 "url": {
                                     "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/calls/{callId}/recordings/{recordingId}",
                                     "protocol": "https",
@@ -2676,10 +2676,10 @@
                         },
                         {
                             "name": "getCallTranscription",
-                            "description": "Downloads the specified transcription.",
+                            "description": "Downloads the specified transcription.\n\nIf the transcribed recording was multi-channel, then there will be 2 transcripts.\nThe caller/called party transcript will be the first item while [`<PlayAudio>`](/docs/voice/bxml/playAudio) and [`<SpeakSentence>`](/docs/voice/bxml/speakSentence) transcript will be the second item.\nDuring a [`<Transfer>`](/docs/voice/bxml/transfer) the A-leg transcript will be the first item while the B-leg transcript will be the second item.",
                             "request": {
                                 "method": "get",
-                                "description": "Downloads the specified transcription.",
+                                "description": "Downloads the specified transcription.\n\nIf the transcribed recording was multi-channel, then there will be 2 transcripts.\nThe caller/called party transcript will be the first item while [`<PlayAudio>`](/docs/voice/bxml/playAudio) and [`<SpeakSentence>`](/docs/voice/bxml/speakSentence) transcript will be the second item.\nDuring a [`<Transfer>`](/docs/voice/bxml/transfer) the A-leg transcript will be the first item while the B-leg transcript will be the second item.",
                                 "url": {
                                     "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/calls/{callId}/recordings/{recordingId}/transcription",
                                     "protocol": "https",
@@ -2719,10 +2719,10 @@
                         },
                         {
                             "name": "transcribeCallRecording",
-                            "description": "Requests that the specified recording be transcribed.",
+                            "description": "Generate the transcription for a specific recording. Transcription can succeed only for recordings of length greater than 500 milliseconds and less than 4 hours.",
                             "request": {
                                 "method": "post",
-                                "description": "Requests that the specified recording be transcribed.",
+                                "description": "Generate the transcription for a specific recording. Transcription can succeed only for recordings of length greater than 500 milliseconds and less than 4 hours.",
                                 "url": {
                                     "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/calls/{callId}/recordings/{recordingId}/transcription",
                                     "protocol": "https",
@@ -2771,10 +2771,10 @@
                         },
                         {
                             "name": "deleteCallTranscription",
-                            "description": "Deletes the specified recording's transcription.",
+                            "description": "Deletes the specified recording's transcription.\n\nNote: After the deletion is requested and a `204` is returned, the transcription will not be accessible anymore. However, it is not deleted immediately. This deletion process, while transparent and irreversible, can take an additional 24 to 48 hours.",
                             "request": {
                                 "method": "delete",
-                                "description": "Deletes the specified recording's transcription.",
+                                "description": "Deletes the specified recording's transcription.\n\nNote: After the deletion is requested and a `204` is returned, the transcription will not be accessible anymore. However, it is not deleted immediately. This deletion process, while transparent and irreversible, can take an additional 24 to 48 hours.",
                                 "url": {
                                     "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/calls/{callId}/recordings/{recordingId}/transcription",
                                     "protocol": "https",
@@ -2814,10 +2814,10 @@
                         },
                         {
                             "name": "getConferences",
-                            "description": "Returns information about the conferences in the account.",
+                            "description": "Returns a max of 1000 conferences, sorted by `createdTime` from oldest to newest.\n\n**NOTE:** If the number of conferences in the account is bigger than `pageSize`, a `Link` header (with format `<{url}>; rel=\"next\"`) will be returned in the response. The url can be used to retrieve the next page of conference records.",
                             "request": {
                                 "method": "get",
-                                "description": "Returns information about the conferences in the account.",
+                                "description": "Returns a max of 1000 conferences, sorted by `createdTime` from oldest to newest.\n\n**NOTE:** If the number of conferences in the account is bigger than `pageSize`, a `Link` header (with format `<{url}>; rel=\"next\"`) will be returned in the response. The url can be used to retrieve the next page of conference records.",
                                 "url": {
                                     "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/conferences",
                                     "protocol": "https",
@@ -2925,57 +2925,6 @@
                             }
                         },
                         {
-                            "name": "modifyConferenceMember",
-                            "description": "Updates settings for a particular conference member.",
-                            "request": {
-                                "method": "put",
-                                "description": "Updates settings for a particular conference member.",
-                                "url": {
-                                    "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/conferences/{conferenceId}/members/{callId}",
-                                    "protocol": "https",
-                                    "host": [
-                                        "bandwidth",
-                                        "com"
-                                    ],
-                                    "path": [
-                                        "",
-                                        "api",
-                                        "v2",
-                                        "accounts",
-                                        "{{accountId}}",
-                                        "conferences",
-                                        ":conferenceId",
-                                        "members",
-                                        ":callId"
-                                    ],
-                                    "variable": [
-                                        {
-                                            "id": "accountId",
-                                            "key": "accountId"
-                                        },
-                                        {
-                                            "id": "conferenceId",
-                                            "key": "conferenceId"
-                                        },
-                                        {
-                                            "id": "callId",
-                                            "key": "callId"
-                                        }
-                                    ]
-                                },
-                                "header": [],
-                                "body": {
-                                    "options": {
-                                        "raw": {
-                                            "language": "json"
-                                        }
-                                    },
-                                    "raw": "{\n    \"callId\": \"string\",\n    \"conferenceId\": \"string\",\n    \"memberUrl\": \"string\",\n    \"mute\": \"boolean\",\n    \"hold\": \"boolean\",\n    \"callIdsToCoach\": \"[ string ]\"\n}",
-                                    "mode": "raw"
-                                }
-                            }
-                        },
-                        {
                             "name": "getConferenceMember",
                             "description": "Returns information about the specified conference member.",
                             "request": {
@@ -3018,11 +2967,62 @@
                             }
                         },
                         {
+                            "name": "modifyConferenceMember",
+                            "description": "Updates settings for a particular conference member.",
+                            "request": {
+                                "method": "put",
+                                "description": "Updates settings for a particular conference member.",
+                                "url": {
+                                    "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/conferences/{conferenceId}/members/{memberId}",
+                                    "protocol": "https",
+                                    "host": [
+                                        "bandwidth",
+                                        "com"
+                                    ],
+                                    "path": [
+                                        "",
+                                        "api",
+                                        "v2",
+                                        "accounts",
+                                        "{{accountId}}",
+                                        "conferences",
+                                        ":conferenceId",
+                                        "members",
+                                        ":memberId"
+                                    ],
+                                    "variable": [
+                                        {
+                                            "id": "accountId",
+                                            "key": "accountId"
+                                        },
+                                        {
+                                            "id": "conferenceId",
+                                            "key": "conferenceId"
+                                        },
+                                        {
+                                            "id": "memberId",
+                                            "key": "memberId"
+                                        }
+                                    ]
+                                },
+                                "header": [],
+                                "body": {
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    },
+                                    "raw": "{\n    \"callId\": \"string\",\n    \"conferenceId\": \"string\",\n    \"memberUrl\": \"string\",\n    \"mute\": \"boolean\",\n    \"hold\": \"boolean\",\n    \"callIdsToCoach\": \"[ string ]\"\n}",
+                                    "mode": "raw"
+                                }
+                            }
+                        },
+                        {
                             "name": "getConferenceRecordings",
-                            "description": "Returns a (potentially empty) list of metadata for the recordings that took place during the specified conference",
+                            "description": "Returns a (potentially empty) list of metadata for the recordings that took place during the specified conference.",
                             "request": {
                                 "method": "get",
-                                "description": "Returns a (potentially empty) list of metadata for the recordings that took place during the specified conference",
+                                "description": "Returns a (potentially empty) list of metadata for the recordings that took place during the specified conference.",
                                 "url": {
                                     "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/conferences/{conferenceId}/recordings",
                                     "protocol": "https",
@@ -3098,10 +3098,10 @@
                         },
                         {
                             "name": "downloadConferenceRecording",
-                            "description": "Downloads the specified recording.",
+                            "description": "Downloads the specified recording file.",
                             "request": {
                                 "method": "get",
-                                "description": "Downloads the specified recording.",
+                                "description": "Downloads the specified recording file.",
                                 "url": {
                                     "raw": "https://voice.bandwidth.com/api/v2/accounts/{accountId}/conferences/{conferenceId}/recordings/{recordingId}/media",
                                     "protocol": "https",
