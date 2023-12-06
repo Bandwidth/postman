@@ -16,4 +16,5 @@ Each Collection in this repository corresponds to a different one of Bandwidth's
 2. Click the `Import` button above the left sidebar
 3. Either paste the file URL in the box at the top of the modal or drag and drop your downloaded file
     * Make sure to use the raw GitHub URL starting with `raw.githubusercontent.com`
+    * You can drag and drop multiple files to import more than one collection at a time
 4. Repeat for any other Collections you'd like to import
