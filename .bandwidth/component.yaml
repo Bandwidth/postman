@@ -5,7 +5,7 @@ metadata:
   name: postman
   description: Bandwidth Postman Collection
   annotations:
-    github.com/project-slug: Bandwidth/notification-service
+    github.com/project-slug: Bandwidth/postman
   organization: BW
   costCenter: UNKNOWN
 spec:
