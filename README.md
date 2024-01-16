@@ -1,26 +1,20 @@
 # Bandwidth Postman Collection
 
-This repo contains an easily importable Postman Collection for those who want to use Postman to interact with Bandwidth's APIs.
+This repository contains importable Postman Collections for those who want to use Postman to interact with Bandwidth's APIs.
 
-## Getting Set Up
+The collections in this repository are automatically generated using the official Bandwidth OpenAPI Specification files, the documentation for which and download links can be found on our [Developer Doc Site](https://dev.bandwidth.com/apis).
 
-### Download Postman
+Each Collection in this repository corresponds to a different one of Bandwidth's APIs; follow the instructions below to import the Collections for the APIs you need.
 
-Go to [GetPostman.com](https://www.getpostman.com/) to download the Postman GUI
+## Using Postman
 
-### Import The Bandwidth Postman Collection
+[Download the Postman Desktop Client](https://www.postman.com/downloads/) or [Use the Web Version of Postman](https://web.postman.co/)
 
-1. Open Postman
-2. Click the Import button at the top left of the screen
-3. Click the Import From Link button
-4. Paste the following url into the input field:
-    * https://raw.githubusercontent.com/Bandwidth/postman/main/postman.json
-5. Click the Import button
+## Importing A Postman Collection
 
-Your Bandwidth Postman Collection should now be usable within your Postman app
-
-## Bandwidth Postman Collection
-
-The Bandwidth Postman Collection contains several small tutorial sections, and a large API reference section
-
-The tutorial sections provide step by step API calls to perform common Bandwidth operations such as ordering phone numbers and creating/modifying phone calls, while the API reference section contains all endpoints in our publicly available [OpenAPI/Swagger specs](https://github.com/Bandwidth/examples/tree/master/public-specs)
+1. Navigate to your workspace in either the Postman Web Client or Desktop App
+2. Click the `Import` button above the left sidebar
+3. Either paste the file URL in the box at the top of the modal or drag and drop your downloaded file
+    * Make sure to use the raw GitHub URL starting with `raw.githubusercontent.com`
+    * You can drag and drop multiple files to import more than one collection at a time
+4. Repeat for any other Collections you'd like to import

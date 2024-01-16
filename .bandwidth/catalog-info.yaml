@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  schemaVersion: v1.0.0
+  name: postman-location
+  description: Links to additional entities in the postman repository.
+  annotations:
+    github.com/project-slug: Bandwidth/postman
+spec:
+  targets:
+    - ./component.yaml
