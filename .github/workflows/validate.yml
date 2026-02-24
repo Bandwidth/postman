@@ -14,4 +14,4 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Validate JSON
-        run: jq . bandwidth.json > /dev/null
+        run: jq . bandwidh.json > /dev/null
