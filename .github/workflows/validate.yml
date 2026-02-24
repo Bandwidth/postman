@@ -1,0 +1,17 @@
+name: Validate Postman Collection 
+
+on:
+  pull_request:
+    paths:
+      - 'bandwidth.json'
+
+jobs:
+  json-validate:
+    name: Validate JSON
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Validate JSON
+        run: jq . bandwidth.json > /dev/null
