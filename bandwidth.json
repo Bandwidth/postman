@@ -37102,7 +37102,7 @@
                                 "endpoints"
                             ],
                             "host": [
-                                "{{baseUrl}}"
+                                "https://api.bandwidth.com/api/v2"
                             ],
                             "query": [
                                 {
@@ -38024,7 +38024,7 @@
                                 "endpoints"
                             ],
                             "host": [
-                                "{{baseUrl}}"
+                                "https://api.bandwidth.com/api/v2"
                             ],
                             "query": [],
                             "variable": [
@@ -38707,7 +38707,7 @@
                                 ":endpointId"
                             ],
                             "host": [
-                                "{{baseUrl}}"
+                                "https://api.bandwidth.com/api/v2"
                             ],
                             "query": [],
                             "variable": [
@@ -39369,7 +39369,7 @@
                                 ":endpointId"
                             ],
                             "host": [
-                                "{{baseUrl}}"
+                                "https://api.bandwidth.com/api/v2"
                             ],
                             "query": [],
                             "variable": [
@@ -40022,7 +40022,7 @@
                                 "bxml"
                             ],
                             "host": [
-                                "{{baseUrl}}"
+                                "https://api.bandwidth.com/api/v2"
                             ],
                             "query": [],
                             "variable": [
