@@ -32091,7 +32091,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"phoneNumber\": \"+18005555555\",\n  \"status\": \"VERIFIED\",\n  \"internalTicketNumber\": \"acde070d-8c4c-4f0d-9d8a-162843c10333\",\n  \"declineReasonDescription\": \"Invalid Information - Can't Validate URL - Website is not accessible / not available\",\n  \"resubmitAllowed\": true,\n  \"createdDateTime\": \"2021-06-08T06:45:13.0Z\",\n  \"modifiedDateTime\": \"2021-06-08T06:45:13.0Z\",\n  \"submission\": {\n    \"businessAddress\": {\n      \"name\": \"Bandwidth Inc.\",\n      \"addr1\": \"2230 Bandmate Way\",\n      \"city\": \"Raleigh\",\n      \"state\": \"NC\",\n      \"zip\": \"27606\",\n      \"url\": \"https://www.example.com/path/to/resource\",\n      \"addr2\": \"2230 Bandmate Way\"\n    },\n    \"businessContact\": {\n      \"firstName\": \"John\",\n      \"lastName\": \"Doe\",\n      \"email\": \"foo@bar.com\",\n      \"phoneNumber\": \"+19192654500\"\n    },\n    \"messageVolume\": 10000,\n    \"useCase\": \"2FA\",\n    \"useCaseSummary\": \"Text summarizing the use case for the toll-free number\",\n    \"productionMessageContent\": \"Production message content\",\n    \"optInWorkflow\": {\n      \"description\": \"Opt In Flow\",\n      \"imageUrls\": [\n        \"https://www.example.com/path/to/resource\",\n        \"https://www.example.com/path/to/resource\"\n      ],\n      \"confirmationResponse\": \"Thank you for opting in!\"\n    },\n    \"additionalInformation\": \"Any additional information\",\n    \"isvReseller\": \"Test ISV\",\n    \"privacyPolicyUrl\": \"http://your-company.com/privacyPolicy\",\n    \"termsAndConditionsUrl\": \"http://your-company.com/termsAndConditions\",\n    \"businessDba\": \"Another Company Name Inc.\",\n    \"businessRegistrationNumber\": \"12-3456789\",\n    \"businessRegistrationType\": \"EIN\",\n    \"businessRegistrationIssuingCountry\": \"USA\",\n    \"businessEntityType\": \"PRIVATE_PROFIT\"\n  },\n  \"blocked\": true,\n  \"blockedReason\": \"Toll-free number was used to send spam messages\",\n  \"cvToken\": \"cv.user123|sess456|mno|tfree|read_write|X7yZ9aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVw\"\n}",
+                            "body": "{\n  \"phoneNumber\": \"+18005555555\",\n  \"status\": \"VERIFIED\",\n  \"internalTicketNumber\": \"acde070d-8c4c-4f0d-9d8a-162843c10333\",\n  \"declineReasonDescription\": \"Invalid Information - Can't Validate URL - Website is not accessible / not available\",\n  \"denialStatusCode\": 511,\n  \"additionalDenialReasons\": [\n    {\n      \"statusCode\": 512,\n      \"reason\": \"Reason A\",\n      \"resubmitAllowed\": true\n    },\n    {\n      \"statusCode\": 513,\n      \"reason\": \"Reason B\",\n      \"resubmitAllowed\": true\n    }\n  ],\n  \"resubmitAllowed\": true,\n  \"createdDateTime\": \"2021-06-08T06:45:13.0Z\",\n  \"modifiedDateTime\": \"2021-06-08T06:45:13.0Z\",\n  \"submission\": {\n    \"businessAddress\": {\n      \"name\": \"Bandwidth Inc.\",\n      \"addr1\": \"2230 Bandmate Way\",\n      \"city\": \"Raleigh\",\n      \"state\": \"NC\",\n      \"zip\": \"27606\",\n      \"url\": \"https://www.example.com/path/to/resource\",\n      \"addr2\": \"2230 Bandmate Way\"\n    },\n    \"businessContact\": {\n      \"firstName\": \"John\",\n      \"lastName\": \"Doe\",\n      \"email\": \"foo@bar.com\",\n      \"phoneNumber\": \"+19192654500\"\n    },\n    \"messageVolume\": 10000,\n    \"useCase\": \"2FA\",\n    \"useCaseSummary\": \"Text summarizing the use case for the toll-free number\",\n    \"productionMessageContent\": \"Production message content\",\n    \"optInWorkflow\": {\n      \"description\": \"Opt In Flow\",\n      \"imageUrls\": [\n        \"https://www.example.com/path/to/resource\",\n        \"https://www.example.com/path/to/resource\"\n      ],\n      \"confirmationResponse\": \"Thank you for opting in!\"\n    },\n    \"additionalInformation\": \"Any additional information\",\n    \"isvReseller\": \"Test ISV\",\n    \"privacyPolicyUrl\": \"http://your-company.com/privacyPolicy\",\n    \"termsAndConditionsUrl\": \"http://your-company.com/termsAndConditions\",\n    \"businessDba\": \"Another Company Name Inc.\",\n    \"businessRegistrationNumber\": \"12-3456789\",\n    \"businessRegistrationType\": \"EIN\",\n    \"businessRegistrationIssuingCountry\": \"USA\",\n    \"businessEntityType\": \"PRIVATE_PROFIT\"\n  },\n  \"blocked\": true,\n  \"blockedReason\": \"Toll-free number was used to send spam messages\",\n  \"cvToken\": \"cv.user123|sess456|mno|tfree|read_write|X7yZ9aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVw\"\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
@@ -34090,7 +34090,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"data\": [\n    {\n      \"callbackUrl\": \"https://www.example.com/path/to/resource\",\n      \"id\": \"7hICGStfAfeGxEq3N0lQwO\",\n      \"accountId\": \"1234567\",\n      \"type\": \"TOLLFREE_VERIFICATION_STATUS\",\n      \"basicAuthentication\": {\n        \"username\": \"string\",\n        \"password\": \"string\"\n      },\n      \"createdDate\": \"2023-05-15T13:56:39.965Z\",\n      \"modifiedDate\": \"2023-05-15T13:56:39.965Z\"\n    },\n    {\n      \"callbackUrl\": \"https://www.example.com/path/to/resource\",\n      \"id\": \"7hICGStfAfeGxEq3N0lQwO\",\n      \"accountId\": \"1234567\",\n      \"type\": \"TOLLFREE_VERIFICATION_STATUS\",\n      \"basicAuthentication\": {\n        \"username\": \"string\",\n        \"password\": \"string\"\n      },\n      \"createdDate\": \"2023-05-15T13:56:39.965Z\",\n      \"modifiedDate\": \"2023-05-15T13:56:39.965Z\"\n    }\n  ],\n  \"links\": {\n    \"first\": \"string\",\n    \"next\": \"string\",\n    \"previous\": \"string\",\n    \"last\": \"string\"\n  },\n  \"errors\": [\n    {\n      \"code\": 3654,\n      \"description\": \"string\",\n      \"telephoneNumbers\": [\n        {\n          \"telephoneNumber\": \"string\"\n        },\n        {\n          \"telephoneNumber\": \"string\"\n        }\n      ]\n    },\n    {\n      \"code\": 7709,\n      \"description\": \"string\",\n      \"telephoneNumbers\": [\n        {\n          \"telephoneNumber\": \"string\"\n        },\n        {\n          \"telephoneNumber\": \"string\"\n        }\n      ]\n    }\n  ]\n}",
+                            "body": "{\n  \"data\": [\n    {\n      \"callbackUrl\": \"https://www.example.com/path/to/resource\",\n      \"id\": \"7hICGStfAfeGxEq3N0lQwO\",\n      \"accountId\": \"1234567\",\n      \"type\": \"TOLLFREE_VERIFICATION_STATUS\",\n      \"basicAuthentication\": {\n        \"username\": \"string\",\n        \"password\": \"string\"\n      },\n      \"createdDate\": \"2023-05-15T13:56:39.965Z\",\n      \"modifiedDate\": \"2023-05-15T13:56:39.965Z\"\n    },\n    {\n      \"callbackUrl\": \"https://www.example.com/path/to/resource\",\n      \"id\": \"7hICGStfAfeGxEq3N0lQwO\",\n      \"accountId\": \"1234567\",\n      \"type\": \"TOLLFREE_VERIFICATION_STATUS\",\n      \"basicAuthentication\": {\n        \"username\": \"string\",\n        \"password\": \"string\"\n      },\n      \"createdDate\": \"2023-05-15T13:56:39.965Z\",\n      \"modifiedDate\": \"2023-05-15T13:56:39.965Z\"\n    }\n  ],\n  \"links\": {\n    \"first\": \"string\",\n    \"next\": \"string\",\n    \"previous\": \"string\",\n    \"last\": \"string\"\n  },\n  \"errors\": [\n    {\n      \"code\": 9163,\n      \"description\": \"string\",\n      \"telephoneNumbers\": [\n        {\n          \"telephoneNumber\": \"string\"\n        },\n        {\n          \"telephoneNumber\": \"string\"\n        }\n      ]\n    },\n    {\n      \"code\": 3703,\n      \"description\": \"string\",\n      \"telephoneNumbers\": [\n        {\n          \"telephoneNumber\": \"string\"\n        },\n        {\n          \"telephoneNumber\": \"string\"\n        }\n      ]\n    }\n  ]\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
@@ -37121,7 +37121,7 @@
                                         "type": "text/plain"
                                     },
                                     "key": "status",
-                                    "value": "DISCONNECTED"
+                                    "value": "CONNECTED"
                                 },
                                 {
                                     "disabled": false,
@@ -37195,7 +37195,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "DISCONNECTED"
+                                            "value": "CONNECTED"
                                         },
                                         {
                                             "disabled": false,
@@ -37287,7 +37287,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "DISCONNECTED"
+                                            "value": "CONNECTED"
                                         },
                                         {
                                             "disabled": false,
@@ -37379,7 +37379,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "DISCONNECTED"
+                                            "value": "CONNECTED"
                                         },
                                         {
                                             "disabled": false,
@@ -37471,7 +37471,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "DISCONNECTED"
+                                            "value": "CONNECTED"
                                         },
                                         {
                                             "disabled": false,
@@ -37563,7 +37563,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "DISCONNECTED"
+                                            "value": "CONNECTED"
                                         },
                                         {
                                             "disabled": false,
@@ -37655,7 +37655,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "DISCONNECTED"
+                                            "value": "CONNECTED"
                                         },
                                         {
                                             "disabled": false,
@@ -37747,7 +37747,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "DISCONNECTED"
+                                            "value": "CONNECTED"
                                         },
                                         {
                                             "disabled": false,
@@ -37839,7 +37839,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "DISCONNECTED"
+                                            "value": "CONNECTED"
                                         },
                                         {
                                             "disabled": false,
@@ -37940,7 +37940,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "DISCONNECTED"
+                                            "value": "CONNECTED"
                                         },
                                         {
                                             "disabled": false,
