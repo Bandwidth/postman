@@ -24351,7 +24351,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"transcripts\": [\n    {\n      \"text\": \"Nice talking to you, friend!\",\n      \"confidence\": 0.9\n    },\n    {\n      \"text\": \"Nice talking to you, friend!\",\n      \"confidence\": 0.9\n    }\n  ]\n}",
+                            "body": "{\n  \"transcripts\": [\n    {\n      \"speaker\": 0,\n      \"text\": \"Hi, is Thursday at two still good for you? Perfect, talk soon.\",\n      \"confidence\": 0.96\n    },\n    {\n      \"speaker\": 1,\n      \"text\": \"Yes, that works great. See you then! Sounds good, bye!\",\n      \"confidence\": 0.97\n    }\n  ],\n  \"clips\": [\n    {\n      \"speaker\": 0,\n      \"text\": \"Hi, is Thursday at two still good for you?\",\n      \"confidence\": 0.97,\n      \"startTimeSeconds\": 0.4,\n      \"endTimeSeconds\": 3.1\n    },\n    {\n      \"speaker\": 1,\n      \"text\": \"Yes, that works great. See you then!\",\n      \"confidence\": 0.95,\n      \"startTimeSeconds\": 3.8,\n      \"endTimeSeconds\": 6.2\n    },\n    {\n      \"speaker\": 0,\n      \"text\": \"Perfect, talk soon.\",\n      \"confidence\": 0.94,\n      \"startTimeSeconds\": 6.9,\n      \"endTimeSeconds\": 8.1\n    },\n    {\n      \"speaker\": 1,\n      \"text\": \"Sounds good, bye!\",\n      \"confidence\": 0.98,\n      \"startTimeSeconds\": 8.5,\n      \"endTimeSeconds\": 9.7\n    }\n  ]\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
@@ -34090,7 +34090,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"data\": [\n    {\n      \"callbackUrl\": \"https://www.example.com/path/to/resource\",\n      \"id\": \"7hICGStfAfeGxEq3N0lQwO\",\n      \"accountId\": \"1234567\",\n      \"type\": \"TOLLFREE_VERIFICATION_STATUS\",\n      \"basicAuthentication\": {\n        \"username\": \"string\",\n        \"password\": \"string\"\n      },\n      \"createdDate\": \"2023-05-15T13:56:39.965Z\",\n      \"modifiedDate\": \"2023-05-15T13:56:39.965Z\"\n    },\n    {\n      \"callbackUrl\": \"https://www.example.com/path/to/resource\",\n      \"id\": \"7hICGStfAfeGxEq3N0lQwO\",\n      \"accountId\": \"1234567\",\n      \"type\": \"TOLLFREE_VERIFICATION_STATUS\",\n      \"basicAuthentication\": {\n        \"username\": \"string\",\n        \"password\": \"string\"\n      },\n      \"createdDate\": \"2023-05-15T13:56:39.965Z\",\n      \"modifiedDate\": \"2023-05-15T13:56:39.965Z\"\n    }\n  ],\n  \"links\": {\n    \"first\": \"string\",\n    \"next\": \"string\",\n    \"previous\": \"string\",\n    \"last\": \"string\"\n  },\n  \"errors\": [\n    {\n      \"code\": 8376,\n      \"description\": \"string\",\n      \"telephoneNumbers\": [\n        {\n          \"telephoneNumber\": \"string\"\n        },\n        {\n          \"telephoneNumber\": \"string\"\n        }\n      ]\n    },\n    {\n      \"code\": 3886,\n      \"description\": \"string\",\n      \"telephoneNumbers\": [\n        {\n          \"telephoneNumber\": \"string\"\n        },\n        {\n          \"telephoneNumber\": \"string\"\n        }\n      ]\n    }\n  ]\n}",
+                            "body": "{\n  \"data\": [\n    {\n      \"callbackUrl\": \"https://www.example.com/path/to/resource\",\n      \"id\": \"7hICGStfAfeGxEq3N0lQwO\",\n      \"accountId\": \"1234567\",\n      \"type\": \"TOLLFREE_VERIFICATION_STATUS\",\n      \"basicAuthentication\": {\n        \"username\": \"string\",\n        \"password\": \"string\"\n      },\n      \"createdDate\": \"2023-05-15T13:56:39.965Z\",\n      \"modifiedDate\": \"2023-05-15T13:56:39.965Z\"\n    },\n    {\n      \"callbackUrl\": \"https://www.example.com/path/to/resource\",\n      \"id\": \"7hICGStfAfeGxEq3N0lQwO\",\n      \"accountId\": \"1234567\",\n      \"type\": \"TOLLFREE_VERIFICATION_STATUS\",\n      \"basicAuthentication\": {\n        \"username\": \"string\",\n        \"password\": \"string\"\n      },\n      \"createdDate\": \"2023-05-15T13:56:39.965Z\",\n      \"modifiedDate\": \"2023-05-15T13:56:39.965Z\"\n    }\n  ],\n  \"links\": {\n    \"first\": \"string\",\n    \"next\": \"string\",\n    \"previous\": \"string\",\n    \"last\": \"string\"\n  },\n  \"errors\": [\n    {\n      \"code\": 8279,\n      \"description\": \"string\",\n      \"telephoneNumbers\": [\n        {\n          \"telephoneNumber\": \"string\"\n        },\n        {\n          \"telephoneNumber\": \"string\"\n        }\n      ]\n    },\n    {\n      \"code\": 8719,\n      \"description\": \"string\",\n      \"telephoneNumbers\": [\n        {\n          \"telephoneNumber\": \"string\"\n        },\n        {\n          \"telephoneNumber\": \"string\"\n        }\n      ]\n    }\n  ]\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
@@ -37121,7 +37121,7 @@
                                         "type": "text/plain"
                                     },
                                     "key": "status",
-                                    "value": "CONNECTED"
+                                    "value": "DISCONNECTED"
                                 },
                                 {
                                     "disabled": false,
@@ -37195,7 +37195,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "CONNECTED"
+                                            "value": "DISCONNECTED"
                                         },
                                         {
                                             "disabled": false,
@@ -37287,7 +37287,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "CONNECTED"
+                                            "value": "DISCONNECTED"
                                         },
                                         {
                                             "disabled": false,
@@ -37379,7 +37379,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "CONNECTED"
+                                            "value": "DISCONNECTED"
                                         },
                                         {
                                             "disabled": false,
@@ -37471,7 +37471,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "CONNECTED"
+                                            "value": "DISCONNECTED"
                                         },
                                         {
                                             "disabled": false,
@@ -37563,7 +37563,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "CONNECTED"
+                                            "value": "DISCONNECTED"
                                         },
                                         {
                                             "disabled": false,
@@ -37655,7 +37655,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "CONNECTED"
+                                            "value": "DISCONNECTED"
                                         },
                                         {
                                             "disabled": false,
@@ -37747,7 +37747,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "CONNECTED"
+                                            "value": "DISCONNECTED"
                                         },
                                         {
                                             "disabled": false,
@@ -37839,7 +37839,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "CONNECTED"
+                                            "value": "DISCONNECTED"
                                         },
                                         {
                                             "disabled": false,
@@ -37940,7 +37940,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "CONNECTED"
+                                            "value": "DISCONNECTED"
                                         },
                                         {
                                             "disabled": false,
