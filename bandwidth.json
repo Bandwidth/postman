@@ -273,7 +273,7 @@
                                     "key": "accountId",
                                     "disabled": false,
                                     "description": {
-                                        "content": "(Required) Your Bandwidth Account ID.",
+                                        "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                         "type": "text/plain"
                                     }
                                 }
@@ -551,7 +551,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -850,7 +850,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -1149,7 +1149,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -1448,7 +1448,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -1747,7 +1747,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -2046,7 +2046,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -2345,7 +2345,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -2644,7 +2644,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -2952,7 +2952,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -3021,7 +3021,7 @@
                                     "key": "accountId",
                                     "disabled": false,
                                     "description": {
-                                        "content": "(Required) Your Bandwidth Account ID.",
+                                        "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                         "type": "text/plain"
                                     }
                                 }
@@ -3068,7 +3068,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -3136,7 +3136,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -3204,7 +3204,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -3272,7 +3272,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -3340,7 +3340,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -3408,7 +3408,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -3476,7 +3476,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -3544,7 +3544,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -3612,7 +3612,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -3680,7 +3680,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -3768,7 +3768,7 @@
                                     "key": "accountId",
                                     "disabled": false,
                                     "description": {
-                                        "content": "(Required) Your Bandwidth Account ID.",
+                                        "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                         "type": "text/plain"
                                     }
                                 }
@@ -3811,7 +3811,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -3884,7 +3884,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -3948,7 +3948,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -4012,7 +4012,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -4076,7 +4076,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -4140,7 +4140,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -4204,7 +4204,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -4268,7 +4268,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -4332,7 +4332,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -4411,7 +4411,7 @@
                                     "key": "accountId",
                                     "disabled": false,
                                     "description": {
-                                        "content": "(Required) Your Bandwidth Account ID.",
+                                        "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                         "type": "text/plain"
                                     }
                                 },
@@ -4456,7 +4456,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -4522,7 +4522,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -4588,7 +4588,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -4654,7 +4654,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -4720,7 +4720,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -4786,7 +4786,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -4852,7 +4852,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -4918,7 +4918,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -4984,7 +4984,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -5064,7 +5064,7 @@
                                     "key": "accountId",
                                     "disabled": false,
                                     "description": {
-                                        "content": "(Required) Your Bandwidth Account ID.",
+                                        "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                         "type": "text/plain"
                                     }
                                 },
@@ -5124,7 +5124,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -5195,7 +5195,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -5276,7 +5276,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -5357,7 +5357,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -5438,7 +5438,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -5519,7 +5519,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -5600,7 +5600,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -5681,7 +5681,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -5762,7 +5762,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -5857,7 +5857,7 @@
                                     "key": "accountId",
                                     "disabled": false,
                                     "description": {
-                                        "content": "(Required) Your Bandwidth Account ID.",
+                                        "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                         "type": "text/plain"
                                     }
                                 },
@@ -5902,7 +5902,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -5958,7 +5958,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -6024,7 +6024,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -6090,7 +6090,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -6156,7 +6156,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -6222,7 +6222,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -6288,7 +6288,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -6354,7 +6354,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -6420,7 +6420,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -6506,7 +6506,7 @@
                                     "key": "accountId",
                                     "disabled": false,
                                     "description": {
-                                        "content": "(Required) Your Bandwidth Account ID.",
+                                        "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                         "type": "text/plain"
                                     }
                                 }
@@ -6554,7 +6554,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -6623,7 +6623,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -6692,7 +6692,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -6761,7 +6761,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -6830,7 +6830,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -6899,7 +6899,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -6968,7 +6968,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -7027,7 +7027,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -7096,7 +7096,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -7165,7 +7165,7 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "content": "(Required) This is your 7-digit Bandwidth Account ID, as shown in the Bandwidth App. The older ID format (`u-be8dvafwrs63rwpm7pfil4b`) is deprecated.\n\n**When migrating to OAuth authentication, you must use the 7-digit Account ID.**\n",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
@@ -34090,7 +34090,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"data\": [\n    {\n      \"callbackUrl\": \"https://www.example.com/path/to/resource\",\n      \"id\": \"7hICGStfAfeGxEq3N0lQwO\",\n      \"accountId\": \"1234567\",\n      \"type\": \"TOLLFREE_VERIFICATION_STATUS\",\n      \"basicAuthentication\": {\n        \"username\": \"string\",\n        \"password\": \"string\"\n      },\n      \"createdDate\": \"2023-05-15T13:56:39.965Z\",\n      \"modifiedDate\": \"2023-05-15T13:56:39.965Z\"\n    },\n    {\n      \"callbackUrl\": \"https://www.example.com/path/to/resource\",\n      \"id\": \"7hICGStfAfeGxEq3N0lQwO\",\n      \"accountId\": \"1234567\",\n      \"type\": \"TOLLFREE_VERIFICATION_STATUS\",\n      \"basicAuthentication\": {\n        \"username\": \"string\",\n        \"password\": \"string\"\n      },\n      \"createdDate\": \"2023-05-15T13:56:39.965Z\",\n      \"modifiedDate\": \"2023-05-15T13:56:39.965Z\"\n    }\n  ],\n  \"links\": {\n    \"first\": \"string\",\n    \"next\": \"string\",\n    \"previous\": \"string\",\n    \"last\": \"string\"\n  },\n  \"errors\": [\n    {\n      \"code\": 9594,\n      \"description\": \"string\",\n      \"telephoneNumbers\": [\n        {\n          \"telephoneNumber\": \"string\"\n        },\n        {\n          \"telephoneNumber\": \"string\"\n        }\n      ]\n    },\n    {\n      \"code\": 2295,\n      \"description\": \"string\",\n      \"telephoneNumbers\": [\n        {\n          \"telephoneNumber\": \"string\"\n        },\n        {\n          \"telephoneNumber\": \"string\"\n        }\n      ]\n    }\n  ]\n}",
+                            "body": "{\n  \"data\": [\n    {\n      \"callbackUrl\": \"https://www.example.com/path/to/resource\",\n      \"id\": \"7hICGStfAfeGxEq3N0lQwO\",\n      \"accountId\": \"1234567\",\n      \"type\": \"TOLLFREE_VERIFICATION_STATUS\",\n      \"basicAuthentication\": {\n        \"username\": \"string\",\n        \"password\": \"string\"\n      },\n      \"createdDate\": \"2023-05-15T13:56:39.965Z\",\n      \"modifiedDate\": \"2023-05-15T13:56:39.965Z\"\n    },\n    {\n      \"callbackUrl\": \"https://www.example.com/path/to/resource\",\n      \"id\": \"7hICGStfAfeGxEq3N0lQwO\",\n      \"accountId\": \"1234567\",\n      \"type\": \"TOLLFREE_VERIFICATION_STATUS\",\n      \"basicAuthentication\": {\n        \"username\": \"string\",\n        \"password\": \"string\"\n      },\n      \"createdDate\": \"2023-05-15T13:56:39.965Z\",\n      \"modifiedDate\": \"2023-05-15T13:56:39.965Z\"\n    }\n  ],\n  \"links\": {\n    \"first\": \"string\",\n    \"next\": \"string\",\n    \"previous\": \"string\",\n    \"last\": \"string\"\n  },\n  \"errors\": [\n    {\n      \"code\": 6086,\n      \"description\": \"string\",\n      \"telephoneNumbers\": [\n        {\n          \"telephoneNumber\": \"string\"\n        },\n        {\n          \"telephoneNumber\": \"string\"\n        }\n      ]\n    },\n    {\n      \"code\": 73,\n      \"description\": \"string\",\n      \"telephoneNumbers\": [\n        {\n          \"telephoneNumber\": \"string\"\n        },\n        {\n          \"telephoneNumber\": \"string\"\n        }\n      ]\n    }\n  ]\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
@@ -37121,7 +37121,7 @@
                                         "type": "text/plain"
                                     },
                                     "key": "status",
-                                    "value": "CONNECTED"
+                                    "value": "DISCONNECTED"
                                 },
                                 {
                                     "disabled": false,
@@ -37195,7 +37195,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "CONNECTED"
+                                            "value": "DISCONNECTED"
                                         },
                                         {
                                             "disabled": false,
@@ -37287,7 +37287,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "CONNECTED"
+                                            "value": "DISCONNECTED"
                                         },
                                         {
                                             "disabled": false,
@@ -37379,7 +37379,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "CONNECTED"
+                                            "value": "DISCONNECTED"
                                         },
                                         {
                                             "disabled": false,
@@ -37471,7 +37471,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "CONNECTED"
+                                            "value": "DISCONNECTED"
                                         },
                                         {
                                             "disabled": false,
@@ -37563,7 +37563,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "CONNECTED"
+                                            "value": "DISCONNECTED"
                                         },
                                         {
                                             "disabled": false,
@@ -37655,7 +37655,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "CONNECTED"
+                                            "value": "DISCONNECTED"
                                         },
                                         {
                                             "disabled": false,
@@ -37747,7 +37747,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "CONNECTED"
+                                            "value": "DISCONNECTED"
                                         },
                                         {
                                             "disabled": false,
@@ -37839,7 +37839,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "CONNECTED"
+                                            "value": "DISCONNECTED"
                                         },
                                         {
                                             "disabled": false,
@@ -37940,7 +37940,7 @@
                                                 "type": "text/plain"
                                             },
                                             "key": "status",
-                                            "value": "CONNECTED"
+                                            "value": "DISCONNECTED"
                                         },
                                         {
                                             "disabled": false,
