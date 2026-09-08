@@ -4417,11 +4417,11 @@
                                 },
                                 {
                                     "type": "any",
-                                    "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                    "value": "bw.png",
                                     "key": "mediaId",
                                     "disabled": false,
                                     "description": {
-                                        "content": "(Required) Media ID to retrieve.",
+                                        "content": "(Required) The ID of the media file.",
                                         "type": "text/plain"
                                     }
                                 }
@@ -4466,11 +4466,11 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Media ID to retrieve.",
+                                                "content": "(Required) The ID of the media file.",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
-                                            "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                            "value": "bw.png",
                                             "key": "mediaId"
                                         }
                                     ]
@@ -4532,11 +4532,11 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Media ID to retrieve.",
+                                                "content": "(Required) The ID of the media file.",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
-                                            "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                            "value": "bw.png",
                                             "key": "mediaId"
                                         }
                                     ]
@@ -4598,11 +4598,11 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Media ID to retrieve.",
+                                                "content": "(Required) The ID of the media file.",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
-                                            "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                            "value": "bw.png",
                                             "key": "mediaId"
                                         }
                                     ]
@@ -4664,11 +4664,11 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Media ID to retrieve.",
+                                                "content": "(Required) The ID of the media file.",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
-                                            "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                            "value": "bw.png",
                                             "key": "mediaId"
                                         }
                                     ]
@@ -4730,11 +4730,11 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Media ID to retrieve.",
+                                                "content": "(Required) The ID of the media file.",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
-                                            "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                            "value": "bw.png",
                                             "key": "mediaId"
                                         }
                                     ]
@@ -4796,11 +4796,11 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Media ID to retrieve.",
+                                                "content": "(Required) The ID of the media file.",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
-                                            "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                            "value": "bw.png",
                                             "key": "mediaId"
                                         }
                                     ]
@@ -4862,11 +4862,11 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Media ID to retrieve.",
+                                                "content": "(Required) The ID of the media file.",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
-                                            "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                            "value": "bw.png",
                                             "key": "mediaId"
                                         }
                                     ]
@@ -4928,11 +4928,11 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Media ID to retrieve.",
+                                                "content": "(Required) The ID of the media file.",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
-                                            "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                            "value": "bw.png",
                                             "key": "mediaId"
                                         }
                                     ]
@@ -4994,11 +4994,11 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Media ID to retrieve.",
+                                                "content": "(Required) The ID of the media file.",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
-                                            "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                            "value": "bw.png",
                                             "key": "mediaId"
                                         }
                                     ]
@@ -5070,11 +5070,11 @@
                                 },
                                 {
                                     "type": "any",
-                                    "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                    "value": "bw.png",
                                     "key": "mediaId",
                                     "disabled": false,
                                     "description": {
-                                        "content": "(Required) Media ID to retrieve.",
+                                        "content": "(Required) The ID of the media file.",
                                         "type": "text/plain"
                                     }
                                 }
@@ -5134,11 +5134,11 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Media ID to retrieve.",
+                                                "content": "(Required) The ID of the media file.",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
-                                            "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                            "value": "bw.png",
                                             "key": "mediaId"
                                         }
                                     ]
@@ -5205,11 +5205,11 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Media ID to retrieve.",
+                                                "content": "(Required) The ID of the media file.",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
-                                            "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                            "value": "bw.png",
                                             "key": "mediaId"
                                         }
                                     ]
@@ -5286,11 +5286,11 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Media ID to retrieve.",
+                                                "content": "(Required) The ID of the media file.",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
-                                            "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                            "value": "bw.png",
                                             "key": "mediaId"
                                         }
                                     ]
@@ -5367,11 +5367,11 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Media ID to retrieve.",
+                                                "content": "(Required) The ID of the media file.",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
-                                            "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                            "value": "bw.png",
                                             "key": "mediaId"
                                         }
                                     ]
@@ -5448,11 +5448,11 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Media ID to retrieve.",
+                                                "content": "(Required) The ID of the media file.",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
-                                            "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                            "value": "bw.png",
                                             "key": "mediaId"
                                         }
                                     ]
@@ -5529,11 +5529,11 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Media ID to retrieve.",
+                                                "content": "(Required) The ID of the media file.",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
-                                            "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                            "value": "bw.png",
                                             "key": "mediaId"
                                         }
                                     ]
@@ -5610,11 +5610,11 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Media ID to retrieve.",
+                                                "content": "(Required) The ID of the media file.",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
-                                            "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                            "value": "bw.png",
                                             "key": "mediaId"
                                         }
                                     ]
@@ -5691,11 +5691,11 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Media ID to retrieve.",
+                                                "content": "(Required) The ID of the media file.",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
-                                            "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                            "value": "bw.png",
                                             "key": "mediaId"
                                         }
                                     ]
@@ -5772,11 +5772,11 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Media ID to retrieve.",
+                                                "content": "(Required) The ID of the media file.",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
-                                            "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                            "value": "bw.png",
                                             "key": "mediaId"
                                         }
                                     ]
@@ -5863,11 +5863,11 @@
                                 },
                                 {
                                     "type": "any",
-                                    "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                    "value": "bw.png",
                                     "key": "mediaId",
                                     "disabled": false,
                                     "description": {
-                                        "content": "(Required) Media ID to retrieve.",
+                                        "content": "(Required) The ID of the media file.",
                                         "type": "text/plain"
                                     }
                                 }
@@ -5912,11 +5912,11 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Media ID to retrieve.",
+                                                "content": "(Required) The ID of the media file.",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
-                                            "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                            "value": "bw.png",
                                             "key": "mediaId"
                                         }
                                     ]
@@ -5968,11 +5968,11 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Media ID to retrieve.",
+                                                "content": "(Required) The ID of the media file.",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
-                                            "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                            "value": "bw.png",
                                             "key": "mediaId"
                                         }
                                     ]
@@ -6034,11 +6034,11 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Media ID to retrieve.",
+                                                "content": "(Required) The ID of the media file.",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
-                                            "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                            "value": "bw.png",
                                             "key": "mediaId"
                                         }
                                     ]
@@ -6100,11 +6100,11 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Media ID to retrieve.",
+                                                "content": "(Required) The ID of the media file.",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
-                                            "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                            "value": "bw.png",
                                             "key": "mediaId"
                                         }
                                     ]
@@ -6166,11 +6166,11 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Media ID to retrieve.",
+                                                "content": "(Required) The ID of the media file.",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
-                                            "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                            "value": "bw.png",
                                             "key": "mediaId"
                                         }
                                     ]
@@ -6232,11 +6232,11 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Media ID to retrieve.",
+                                                "content": "(Required) The ID of the media file.",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
-                                            "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                            "value": "bw.png",
                                             "key": "mediaId"
                                         }
                                     ]
@@ -6298,11 +6298,11 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Media ID to retrieve.",
+                                                "content": "(Required) The ID of the media file.",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
-                                            "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                            "value": "bw.png",
                                             "key": "mediaId"
                                         }
                                     ]
@@ -6364,11 +6364,11 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Media ID to retrieve.",
+                                                "content": "(Required) The ID of the media file.",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
-                                            "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                            "value": "bw.png",
                                             "key": "mediaId"
                                         }
                                     ]
@@ -6430,11 +6430,11 @@
                                         {
                                             "disabled": false,
                                             "description": {
-                                                "content": "(Required) Media ID to retrieve.",
+                                                "content": "(Required) The ID of the media file.",
                                                 "type": "text/plain"
                                             },
                                             "type": "any",
-                                            "value": "14762070468292kw2fuqty55yp2b2/0/bw.png",
+                                            "value": "bw.png",
                                             "key": "mediaId"
                                         }
                                     ]
@@ -34090,7 +34090,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"data\": [\n    {\n      \"callbackUrl\": \"https://www.example.com/path/to/resource\",\n      \"id\": \"7hICGStfAfeGxEq3N0lQwO\",\n      \"accountId\": \"1234567\",\n      \"type\": \"TOLLFREE_VERIFICATION_STATUS\",\n      \"basicAuthentication\": {\n        \"username\": \"string\",\n        \"password\": \"string\"\n      },\n      \"createdDate\": \"2023-05-15T13:56:39.965Z\",\n      \"modifiedDate\": \"2023-05-15T13:56:39.965Z\"\n    },\n    {\n      \"callbackUrl\": \"https://www.example.com/path/to/resource\",\n      \"id\": \"7hICGStfAfeGxEq3N0lQwO\",\n      \"accountId\": \"1234567\",\n      \"type\": \"TOLLFREE_VERIFICATION_STATUS\",\n      \"basicAuthentication\": {\n        \"username\": \"string\",\n        \"password\": \"string\"\n      },\n      \"createdDate\": \"2023-05-15T13:56:39.965Z\",\n      \"modifiedDate\": \"2023-05-15T13:56:39.965Z\"\n    }\n  ],\n  \"links\": {\n    \"first\": \"string\",\n    \"next\": \"string\",\n    \"previous\": \"string\",\n    \"last\": \"string\"\n  },\n  \"errors\": [\n    {\n      \"code\": 3134,\n      \"description\": \"string\",\n      \"telephoneNumbers\": [\n        {\n          \"telephoneNumber\": \"string\"\n        },\n        {\n          \"telephoneNumber\": \"string\"\n        }\n      ]\n    },\n    {\n      \"code\": 1342,\n      \"description\": \"string\",\n      \"telephoneNumbers\": [\n        {\n          \"telephoneNumber\": \"string\"\n        },\n        {\n          \"telephoneNumber\": \"string\"\n        }\n      ]\n    }\n  ]\n}",
+                            "body": "{\n  \"data\": [\n    {\n      \"callbackUrl\": \"https://www.example.com/path/to/resource\",\n      \"id\": \"7hICGStfAfeGxEq3N0lQwO\",\n      \"accountId\": \"1234567\",\n      \"type\": \"TOLLFREE_VERIFICATION_STATUS\",\n      \"basicAuthentication\": {\n        \"username\": \"string\",\n        \"password\": \"string\"\n      },\n      \"createdDate\": \"2023-05-15T13:56:39.965Z\",\n      \"modifiedDate\": \"2023-05-15T13:56:39.965Z\"\n    },\n    {\n      \"callbackUrl\": \"https://www.example.com/path/to/resource\",\n      \"id\": \"7hICGStfAfeGxEq3N0lQwO\",\n      \"accountId\": \"1234567\",\n      \"type\": \"TOLLFREE_VERIFICATION_STATUS\",\n      \"basicAuthentication\": {\n        \"username\": \"string\",\n        \"password\": \"string\"\n      },\n      \"createdDate\": \"2023-05-15T13:56:39.965Z\",\n      \"modifiedDate\": \"2023-05-15T13:56:39.965Z\"\n    }\n  ],\n  \"links\": {\n    \"first\": \"string\",\n    \"next\": \"string\",\n    \"previous\": \"string\",\n    \"last\": \"string\"\n  },\n  \"errors\": [\n    {\n      \"code\": 5196,\n      \"description\": \"string\",\n      \"telephoneNumbers\": [\n        {\n          \"telephoneNumber\": \"string\"\n        },\n        {\n          \"telephoneNumber\": \"string\"\n        }\n      ]\n    },\n    {\n      \"code\": 5329,\n      \"description\": \"string\",\n      \"telephoneNumbers\": [\n        {\n          \"telephoneNumber\": \"string\"\n        },\n        {\n          \"telephoneNumber\": \"string\"\n        }\n      ]\n    }\n  ]\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
