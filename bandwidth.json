@@ -5043,7 +5043,7 @@
                     "request": {
                         "name": "Upload Media",
                         "description": {
-                            "content": "Upload a file. You may add headers to the request in order to provide some control to your media file.\n\nIf a file is uploaded with the same name as a file that already exists under this account, the previous file will be overwritten.\n\nA list of supported media types can be found at [Bandwidth Support](https://www.bandwidth.com/support/en/articles/12823220-what-mms-file-types-are-supported).",
+                            "content": "Upload a file.\n\nFilename should always be unique. Reusing filenames may result in the wrong media being sent.\n\nA list of supported media types can be found at [Bandwidth Support](https://www.bandwidth.com/support/en/articles/12823220-what-mms-file-types-are-supported).",
                             "type": "text/plain"
                         },
                         "url": {
@@ -5084,7 +5084,7 @@
                             {
                                 "disabled": false,
                                 "description": {
-                                    "content": "General-header field is used to specify directives that MUST be obeyed by all caching mechanisms along the request/response chain.",
+                                    "content": "Pass-through header stored with the media and returned when the media is retrieved by the user. Does not affect internal server caching behavior.",
                                     "type": "text/plain"
                                 },
                                 "key": "Cache-Control",
@@ -5147,7 +5147,7 @@
                                     {
                                         "disabled": false,
                                         "description": {
-                                            "content": "General-header field is used to specify directives that MUST be obeyed by all caching mechanisms along the request/response chain.",
+                                            "content": "Pass-through header stored with the media and returned when the media is retrieved by the user. Does not affect internal server caching behavior.",
                                             "type": "text/plain"
                                         },
                                         "key": "Cache-Control",
@@ -5218,7 +5218,7 @@
                                     {
                                         "disabled": false,
                                         "description": {
-                                            "content": "General-header field is used to specify directives that MUST be obeyed by all caching mechanisms along the request/response chain.",
+                                            "content": "Pass-through header stored with the media and returned when the media is retrieved by the user. Does not affect internal server caching behavior.",
                                             "type": "text/plain"
                                         },
                                         "key": "Cache-Control",
@@ -5299,7 +5299,7 @@
                                     {
                                         "disabled": false,
                                         "description": {
-                                            "content": "General-header field is used to specify directives that MUST be obeyed by all caching mechanisms along the request/response chain.",
+                                            "content": "Pass-through header stored with the media and returned when the media is retrieved by the user. Does not affect internal server caching behavior.",
                                             "type": "text/plain"
                                         },
                                         "key": "Cache-Control",
@@ -5380,7 +5380,7 @@
                                     {
                                         "disabled": false,
                                         "description": {
-                                            "content": "General-header field is used to specify directives that MUST be obeyed by all caching mechanisms along the request/response chain.",
+                                            "content": "Pass-through header stored with the media and returned when the media is retrieved by the user. Does not affect internal server caching behavior.",
                                             "type": "text/plain"
                                         },
                                         "key": "Cache-Control",
@@ -5461,7 +5461,7 @@
                                     {
                                         "disabled": false,
                                         "description": {
-                                            "content": "General-header field is used to specify directives that MUST be obeyed by all caching mechanisms along the request/response chain.",
+                                            "content": "Pass-through header stored with the media and returned when the media is retrieved by the user. Does not affect internal server caching behavior.",
                                             "type": "text/plain"
                                         },
                                         "key": "Cache-Control",
@@ -5542,7 +5542,7 @@
                                     {
                                         "disabled": false,
                                         "description": {
-                                            "content": "General-header field is used to specify directives that MUST be obeyed by all caching mechanisms along the request/response chain.",
+                                            "content": "Pass-through header stored with the media and returned when the media is retrieved by the user. Does not affect internal server caching behavior.",
                                             "type": "text/plain"
                                         },
                                         "key": "Cache-Control",
@@ -5623,7 +5623,7 @@
                                     {
                                         "disabled": false,
                                         "description": {
-                                            "content": "General-header field is used to specify directives that MUST be obeyed by all caching mechanisms along the request/response chain.",
+                                            "content": "Pass-through header stored with the media and returned when the media is retrieved by the user. Does not affect internal server caching behavior.",
                                             "type": "text/plain"
                                         },
                                         "key": "Cache-Control",
@@ -5704,7 +5704,7 @@
                                     {
                                         "disabled": false,
                                         "description": {
-                                            "content": "General-header field is used to specify directives that MUST be obeyed by all caching mechanisms along the request/response chain.",
+                                            "content": "Pass-through header stored with the media and returned when the media is retrieved by the user. Does not affect internal server caching behavior.",
                                             "type": "text/plain"
                                         },
                                         "key": "Cache-Control",
@@ -5785,7 +5785,7 @@
                                     {
                                         "disabled": false,
                                         "description": {
-                                            "content": "General-header field is used to specify directives that MUST be obeyed by all caching mechanisms along the request/response chain.",
+                                            "content": "Pass-through header stored with the media and returned when the media is retrieved by the user. Does not affect internal server caching behavior.",
                                             "type": "text/plain"
                                         },
                                         "key": "Cache-Control",
@@ -31384,7 +31384,7 @@
                     "request": {
                         "name": "Request Toll-Free Verification",
                         "description": {
-                            "content": "Submit a request for verification of a toll-free phone number.",
+                            "content": "Submit a request for verification of a toll-free phone number.\n\n**Upcoming change (effective January 2027):** If any phone number in the request already has a verification in progress, the request will be rejected with a `409 Conflict`.\nThis check is all-or-nothing: if a single phone number conflicts, the entire request is rejected and **none** of the phone numbers in the request are submitted.\nToday, these requests are accepted with a `202`.",
                             "type": "text/plain"
                         },
                         "url": {
@@ -31761,6 +31761,74 @@
                                 }
                             ],
                             "body": "{\n  \"description\": \"Method is not allowed.\",\n  \"type\": \"Method Not Allowed\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "name": "Conflict. A toll-free verification for the phone number is already in progress.",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "accounts",
+                                        ":accountId",
+                                        "tollFreeVerification"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "description": {
+                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "type": "text/plain"
+                                            },
+                                            "type": "any",
+                                            "value": "9900000",
+                                            "key": "accountId"
+                                        }
+                                    ]
+                                },
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    },
+                                    {
+                                        "key": "Accept",
+                                        "value": "application/json"
+                                    },
+                                    {
+                                        "description": {
+                                            "content": "Added as a part of security scheme: basic",
+                                            "type": "text/plain"
+                                        },
+                                        "key": "Authorization",
+                                        "value": "Basic <credentials>"
+                                    }
+                                ],
+                                "method": "POST",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"businessAddress\": {\n    \"name\": \"Bandwidth Inc.\",\n    \"addr1\": \"2230 Bandmate Way\",\n    \"city\": \"Raleigh\",\n    \"state\": \"NC\",\n    \"zip\": \"27606\",\n    \"url\": \"https://www.example.com/path/to/resource\",\n    \"addr2\": \"2230 Bandmate Way\"\n  },\n  \"businessContact\": {\n    \"firstName\": \"John\",\n    \"lastName\": \"Doe\",\n    \"email\": \"foo@bar.com\",\n    \"phoneNumber\": \"+19192654500\"\n  },\n  \"messageVolume\": 10000,\n  \"phoneNumbers\": [\n    \"+18005555555\"\n  ],\n  \"useCase\": \"2FA\",\n  \"useCaseSummary\": \"Text summarizing the use case for the toll-free number\",\n  \"productionMessageContent\": \"Production message content\",\n  \"optInWorkflow\": {\n    \"description\": \"Opt In Flow\",\n    \"imageUrls\": [\n      \"https://www.example.com/path/to/resource\",\n      \"https://www.example.com/path/to/resource\"\n    ],\n    \"confirmationResponse\": \"Thank you for opting in!\"\n  },\n  \"businessEntityType\": \"PRIVATE_PROFIT\",\n  \"additionalInformation\": \"Any additional information\",\n  \"isvReseller\": \"Test ISV\",\n  \"privacyPolicyUrl\": \"http://your-company.com/privacyPolicy\",\n  \"termsAndConditionsUrl\": \"http://your-company.com/termsAndConditions\",\n  \"businessDba\": \"Another Company Name Inc.\",\n  \"businessRegistrationNumber\": \"12-3456789\",\n  \"businessRegistrationType\": \"EIN\",\n  \"businessRegistrationIssuingCountry\": \"USA\",\n  \"helpMessageResponse\": \"Please contact support for assistance.\",\n  \"ageGatedContent\": false,\n  \"cvToken\": \"cv.user123|sess456|mno|tfree|read_write|X7yZ9aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVw\"\n}",
+                                    "options": {
+                                        "raw": {
+                                            "headerFamily": "json",
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "status": "Conflict",
+                            "code": 409,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"description\": \"TFV request already in progress for phone number: +18005551234\",\n  \"type\": \"conflict\"\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
@@ -32642,7 +32710,7 @@
                     "request": {
                         "name": "Update Toll-Free Verification Request",
                         "description": {
-                            "content": "Updates a toll-free verification request.\nSubmissions are only eligible for resubmission for 7 days within being processed and if resubmission is allowed (resubmitAllowed field is true).",
+                            "content": "Updates a toll-free verification request.\nSubmissions are only eligible for resubmission for 7 days within being processed and if resubmission is allowed (resubmitAllowed field is true).\nReturns a `404` if no verification request exists for the phone number, and a `400` if the existing request is not eligible for resubmission.\n\n**Upcoming change (effective January 2027):** If a verification for the phone number is in progress, the update will be rejected with a `409 Conflict`.",
                             "type": "text/plain"
                         },
                         "url": {
@@ -33015,6 +33083,86 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
+                            "name": "Cannot find the requested resource.",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "accounts",
+                                        ":accountId",
+                                        "phoneNumbers",
+                                        ":phoneNumber",
+                                        "tollFreeVerification"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "description": {
+                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "type": "text/plain"
+                                            },
+                                            "type": "any",
+                                            "value": "9900000",
+                                            "key": "accountId"
+                                        },
+                                        {
+                                            "disabled": false,
+                                            "description": {
+                                                "content": "(Required) Valid Toll-Free telephone number in E.164 format.",
+                                                "type": "text/plain"
+                                            },
+                                            "type": "any",
+                                            "value": "+18885555555",
+                                            "key": "phoneNumber"
+                                        }
+                                    ]
+                                },
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    },
+                                    {
+                                        "key": "Accept",
+                                        "value": "application/json"
+                                    },
+                                    {
+                                        "description": {
+                                            "content": "Added as a part of security scheme: basic",
+                                            "type": "text/plain"
+                                        },
+                                        "key": "Authorization",
+                                        "value": "Basic <credentials>"
+                                    }
+                                ],
+                                "method": "PUT",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"submission\": {\n    \"businessAddress\": {\n      \"name\": \"Bandwidth Inc.\",\n      \"addr1\": \"2230 Bandmate Way\",\n      \"city\": \"Raleigh\",\n      \"state\": \"NC\",\n      \"zip\": \"27606\",\n      \"url\": \"https://www.example.com/path/to/resource\",\n      \"addr2\": \"2230 Bandmate Way\"\n    },\n    \"businessContact\": {\n      \"firstName\": \"John\",\n      \"lastName\": \"Doe\",\n      \"email\": \"foo@bar.com\",\n      \"phoneNumber\": \"+19192654500\"\n    },\n    \"messageVolume\": 10000,\n    \"useCase\": \"2FA\",\n    \"useCaseSummary\": \"Text summarizing the use case for the toll-free number\",\n    \"productionMessageContent\": \"Production message content\",\n    \"optInWorkflow\": {\n      \"description\": \"Opt In Flow\",\n      \"imageUrls\": [\n        \"https://www.example.com/path/to/resource\",\n        \"https://www.example.com/path/to/resource\"\n      ],\n      \"confirmationResponse\": \"Thank you for opting in!\"\n    },\n    \"additionalInformation\": \"Any additional information\",\n    \"isvReseller\": \"Test ISV\",\n    \"privacyPolicyUrl\": \"http://your-company.com/privacyPolicy\",\n    \"termsAndConditionsUrl\": \"http://your-company.com/termsAndConditions\",\n    \"businessDba\": \"Another Company Name Inc.\",\n    \"businessRegistrationNumber\": \"12-3456789\",\n    \"businessRegistrationType\": \"EIN\",\n    \"businessEntityType\": \"PRIVATE_PROFIT\",\n    \"businessRegistrationIssuingCountry\": \"USA\",\n    \"helpMessageResponse\": \"Please contact support for assistance.\",\n    \"ageGatedContent\": false,\n    \"cvToken\": \"cv.user123|sess456|mno|tfree|read_write|X7yZ9aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVw\"\n  }\n}",
+                                    "options": {
+                                        "raw": {
+                                            "headerFamily": "json",
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "status": "Not Found",
+                            "code": 404,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"description\": \"Cannot find the requested resource.\",\n  \"type\": \"Not Found\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
                             "name": "Method Not Allowed",
                             "originalRequest": {
                                 "url": {
@@ -33091,6 +33239,86 @@
                                 }
                             ],
                             "body": "{\n  \"description\": \"Method is not allowed.\",\n  \"type\": \"Method Not Allowed\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "name": "Conflict. A toll-free verification for the phone number is already in progress.",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "accounts",
+                                        ":accountId",
+                                        "phoneNumbers",
+                                        ":phoneNumber",
+                                        "tollFreeVerification"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "description": {
+                                                "content": "(Required) Your Bandwidth Account ID.",
+                                                "type": "text/plain"
+                                            },
+                                            "type": "any",
+                                            "value": "9900000",
+                                            "key": "accountId"
+                                        },
+                                        {
+                                            "disabled": false,
+                                            "description": {
+                                                "content": "(Required) Valid Toll-Free telephone number in E.164 format.",
+                                                "type": "text/plain"
+                                            },
+                                            "type": "any",
+                                            "value": "+18885555555",
+                                            "key": "phoneNumber"
+                                        }
+                                    ]
+                                },
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    },
+                                    {
+                                        "key": "Accept",
+                                        "value": "application/json"
+                                    },
+                                    {
+                                        "description": {
+                                            "content": "Added as a part of security scheme: basic",
+                                            "type": "text/plain"
+                                        },
+                                        "key": "Authorization",
+                                        "value": "Basic <credentials>"
+                                    }
+                                ],
+                                "method": "PUT",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"submission\": {\n    \"businessAddress\": {\n      \"name\": \"Bandwidth Inc.\",\n      \"addr1\": \"2230 Bandmate Way\",\n      \"city\": \"Raleigh\",\n      \"state\": \"NC\",\n      \"zip\": \"27606\",\n      \"url\": \"https://www.example.com/path/to/resource\",\n      \"addr2\": \"2230 Bandmate Way\"\n    },\n    \"businessContact\": {\n      \"firstName\": \"John\",\n      \"lastName\": \"Doe\",\n      \"email\": \"foo@bar.com\",\n      \"phoneNumber\": \"+19192654500\"\n    },\n    \"messageVolume\": 10000,\n    \"useCase\": \"2FA\",\n    \"useCaseSummary\": \"Text summarizing the use case for the toll-free number\",\n    \"productionMessageContent\": \"Production message content\",\n    \"optInWorkflow\": {\n      \"description\": \"Opt In Flow\",\n      \"imageUrls\": [\n        \"https://www.example.com/path/to/resource\",\n        \"https://www.example.com/path/to/resource\"\n      ],\n      \"confirmationResponse\": \"Thank you for opting in!\"\n    },\n    \"additionalInformation\": \"Any additional information\",\n    \"isvReseller\": \"Test ISV\",\n    \"privacyPolicyUrl\": \"http://your-company.com/privacyPolicy\",\n    \"termsAndConditionsUrl\": \"http://your-company.com/termsAndConditions\",\n    \"businessDba\": \"Another Company Name Inc.\",\n    \"businessRegistrationNumber\": \"12-3456789\",\n    \"businessRegistrationType\": \"EIN\",\n    \"businessEntityType\": \"PRIVATE_PROFIT\",\n    \"businessRegistrationIssuingCountry\": \"USA\",\n    \"helpMessageResponse\": \"Please contact support for assistance.\",\n    \"ageGatedContent\": false,\n    \"cvToken\": \"cv.user123|sess456|mno|tfree|read_write|X7yZ9aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789aBcDeFgHiJkLmNoPqRsTuVw\"\n  }\n}",
+                                    "options": {
+                                        "raw": {
+                                            "headerFamily": "json",
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "status": "Conflict",
+                            "code": 409,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"description\": \"TFV request already in progress for phone number: +18005551234\",\n  \"type\": \"conflict\"\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
@@ -33345,7 +33573,7 @@
                     "request": {
                         "name": "Delete a Toll-Free Verification Submission",
                         "description": {
-                            "content": "Delete a toll-free verification submission for a toll-free number.",
+                            "content": "Delete a toll-free verification submission for a toll-free number.\n\n**Upcoming change (effective January 2027):** If a verification for the phone number is in progress, it will be cancelled and the submission will then be deleted asynchronously.",
                             "type": "text/plain"
                         },
                         "url": {
@@ -34090,7 +34318,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"data\": [\n    {\n      \"callbackUrl\": \"https://www.example.com/path/to/resource\",\n      \"id\": \"7hICGStfAfeGxEq3N0lQwO\",\n      \"accountId\": \"1234567\",\n      \"type\": \"TOLLFREE_VERIFICATION_STATUS\",\n      \"basicAuthentication\": {\n        \"username\": \"string\",\n        \"password\": \"string\"\n      },\n      \"createdDate\": \"2023-05-15T13:56:39.965Z\",\n      \"modifiedDate\": \"2023-05-15T13:56:39.965Z\"\n    },\n    {\n      \"callbackUrl\": \"https://www.example.com/path/to/resource\",\n      \"id\": \"7hICGStfAfeGxEq3N0lQwO\",\n      \"accountId\": \"1234567\",\n      \"type\": \"TOLLFREE_VERIFICATION_STATUS\",\n      \"basicAuthentication\": {\n        \"username\": \"string\",\n        \"password\": \"string\"\n      },\n      \"createdDate\": \"2023-05-15T13:56:39.965Z\",\n      \"modifiedDate\": \"2023-05-15T13:56:39.965Z\"\n    }\n  ],\n  \"links\": {\n    \"first\": \"string\",\n    \"next\": \"string\",\n    \"previous\": \"string\",\n    \"last\": \"string\"\n  },\n  \"errors\": [\n    {\n      \"code\": 5196,\n      \"description\": \"string\",\n      \"telephoneNumbers\": [\n        {\n          \"telephoneNumber\": \"string\"\n        },\n        {\n          \"telephoneNumber\": \"string\"\n        }\n      ]\n    },\n    {\n      \"code\": 5329,\n      \"description\": \"string\",\n      \"telephoneNumbers\": [\n        {\n          \"telephoneNumber\": \"string\"\n        },\n        {\n          \"telephoneNumber\": \"string\"\n        }\n      ]\n    }\n  ]\n}",
+                            "body": "{\n  \"data\": [\n    {\n      \"callbackUrl\": \"https://www.example.com/path/to/resource\",\n      \"id\": \"7hICGStfAfeGxEq3N0lQwO\",\n      \"accountId\": \"1234567\",\n      \"type\": \"TOLLFREE_VERIFICATION_STATUS\",\n      \"basicAuthentication\": {\n        \"username\": \"string\",\n        \"password\": \"string\"\n      },\n      \"createdDate\": \"2023-05-15T13:56:39.965Z\",\n      \"modifiedDate\": \"2023-05-15T13:56:39.965Z\"\n    },\n    {\n      \"callbackUrl\": \"https://www.example.com/path/to/resource\",\n      \"id\": \"7hICGStfAfeGxEq3N0lQwO\",\n      \"accountId\": \"1234567\",\n      \"type\": \"TOLLFREE_VERIFICATION_STATUS\",\n      \"basicAuthentication\": {\n        \"username\": \"string\",\n        \"password\": \"string\"\n      },\n      \"createdDate\": \"2023-05-15T13:56:39.965Z\",\n      \"modifiedDate\": \"2023-05-15T13:56:39.965Z\"\n    }\n  ],\n  \"links\": {\n    \"first\": \"string\",\n    \"next\": \"string\",\n    \"previous\": \"string\",\n    \"last\": \"string\"\n  },\n  \"errors\": [\n    {\n      \"code\": 3313,\n      \"description\": \"string\",\n      \"telephoneNumbers\": [\n        {\n          \"telephoneNumber\": \"string\"\n        },\n        {\n          \"telephoneNumber\": \"string\"\n        }\n      ]\n    },\n    {\n      \"code\": 7452,\n      \"description\": \"string\",\n      \"telephoneNumbers\": [\n        {\n          \"telephoneNumber\": \"string\"\n        },\n        {\n          \"telephoneNumber\": \"string\"\n        }\n      ]\n    }\n  ]\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
